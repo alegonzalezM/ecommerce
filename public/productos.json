@@ -1,0 +1,83 @@
+[
+    { 
+    "id": 1,
+    "name": "Raleigh Mojave 2.0 negro/azul",
+    "categoria": "bicicletas",
+    "price": 500000,
+    "imagen": "/images/bicicletas/BIN2.0-29-negro-azul.jpg",
+    "stock": 20,
+    "descripcion": "Bicicleta Raleigh Mojave 2.0 negro/azul."
+  },
+  {
+    "id": 2,
+    "name": "Raleigh Mojave 2.0 negro/gris",
+    "categoria": "bicicletas",
+    "price": 500000,
+    "imagen": "/images/bicicletas/BIN2.0-29-negro-gris.jpg",
+    "stock": 15,
+    "descripcion": "Bicicleta Raleigh Mojave 2.0 negro/gris."
+    },
+    {
+    "id": 3,
+    "name": "Raleigh Mojave 2.0 negro/rojo",
+    "categoria": "bicicletas",
+    "price": 500000,
+    "imagen": "/images/bicicletas/BIN2.0-29-negro-gris.jpg",
+    "stock": 11,
+    "descripcion": "Bicicleta Raleigh Mojave 2.0 negro/rojo."
+    },
+    {
+    "id": 4,
+    "name": "Raleigh Mojave 2.0 dama negro/rosa",
+    "categoria": "bicicletas",
+    "price": 500000,
+    "imagen": "/images/bicicletas/BIN2.0D-29-negro-rosa.jpg",
+    "stock": 11,
+    "descripcion": "Bicicleta Raleigh Mojave 2.0 dama negro/rosa."
+    },
+    {
+    "id": 5,
+    "name": "Raleigh Mojave 2.0 dama negro/verde",
+    "categoria": "bicicletas",
+    "price": 500000,
+    "imagen": "/images/bicicletas/BIN2.0D-29-negro-verde.jpg",
+    "stock": 17,
+    "descripcion": "Bicicleta Raleigh Mojave 2.0 dama negro/verde."
+    },
+    {
+    "id": 6,
+    "name": "Raleigh Mojave 4.5 rojo/gris",
+    "categoria": "bicicletas",
+    "price": 550000,
+    "imagen": "/images/bicicletas/BIN4.5-29-rojo-gris.jpg",
+    "stock": 13,
+    "descripcion": "Bicicleta Raleigh Mojave 4.5 rojo/gris."
+    },
+    {
+    "id": 7,
+    "name": "Raleigh Mojave 4.5 negro/amarillo",
+    "categoria": "bicicletas",
+    "price": 550000,
+    "imagen": "/images/bicicletas/BIN4.5-29-negro-amarillo.jpg",
+    "stock": 5,
+    "descripcion": "Bicicleta Raleigh Mojave 4.5 negro/amarillo."
+    },
+    {
+    "id": 8,
+    "name": "Raleigh Mojave 4.0 negro/gris",
+    "categoria": "bicicletas",
+    "price": 680000,
+    "imagen": "/images/bicicletas/BIN4.0-29-negro-gris.jpg",
+    "stock": 12,
+    "descripcion": "Bicicleta Raleigh Mojave 4.0 negro/gris."
+    },
+    {
+    "id": 9,
+    "name": "Raleigh Mojave 4.0 azul/blanco",
+    "categoria": "bicicletas",
+    "price": 550000,
+    "imagen": "/images/bicicletas/BIN4.0-29-azul-blanco.jpg",
+    "stock": 7,
+    "descripcion": "Bicicleta Raleigh Mojave 4.0 azul/blanco."
+    }
+]

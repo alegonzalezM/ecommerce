@@ -1,0 +1,117 @@
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import Header from "./components/Header";
+import Nav from "./components/Nav";
+import Gallery from "./components/Gallery";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
+import { useEffect, useState, useRef } from "react";
+import video from "./assets/video.mp4";
+
+function App() {
+  const [count, setCount] = useState(0);
+  const [productos, setProductos] = useState([]);
+
+  useEffect(() => {
+    fetch("/productos.json")
+      .then((res) => res.json())
+      .then((data) => setProductos(data));
+  }, []);
+
+  //muestra resultado de la suma en un div
+  const [resultado, setResultado] = useState(null); //null p' q esté vacio al iniciar
+  const botonPulsado = () => {
+    const result = suma(5, 7);
+    setResultado(result);
+  };
+  //acciona el video
+  const videoRef = useRef(null);
+  const videoPlay = () => {
+    videoRef.current.play();
+  };
+  const videoPause = () => {
+    videoRef.current.pause();
+  };
+
+  //conversor dolares a euros
+  const [valorCambio, setValorCambio] = useState(null);
+  const eurosRef = useRef();
+  useEffect(() => {
+    const llamaApiCambio = async () => {
+      try {
+        const res = await fetch(
+          " https://v6.exchangerate-api.com/v6/073f3f6bc830457595470f2a/latest/USD"
+        );
+        const datos = await res.json();
+        console.log(datos);
+
+        console.log("Tasa: ", datos.conversion_rates.USD);
+        setValorCambio(datos.conversion_rates.USD);
+      } catch (error) {
+        console.error("Error al acceder a la API ", error);
+      }
+    };
+    llamaApiCambio();
+  }, []); //segundo parámetro de useEffect array vacío
+
+  const resultadoRef = useRef();
+  const calcular = () => {
+    const valor = parseFloat(eurosRef.current.value);
+    const dolares = valor * valorCambio;
+    resultadoRef.current.innerHTML = dolares.toFixed(2) + " U$S";
+    console.log("Euros:", valor, "\nDolares:", dolares);
+  };
+
+  return (
+    <>
+      <div>
+        {/* suma 1 al pulsar boton(falta boton)*/}
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}{" "}
+        </button>
+
+        {/* div q muestra resultado de la suma   */}
+        <button onClick={botonPulsado}>pulsar</button>
+        <div>{resultado != null && <h2>El resultado es: {resultado}</h2>} </div>
+
+        {/* video + botones, en un div p' centrarlos */}
+        <div>
+          <video ref={videoRef} width="400">
+            <source src={video} type="video/mp4" />
+          </video>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <button onClick={videoPlay}>Play</button>
+            <button onClick={videoPause}>Pause</button>
+          </div>
+        </div>
+
+        {/* div conversor de dolares a euros */}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <h2>Conversor euro-dolar</h2>
+          <input ref={eurosRef} type="text" style={{ width: "200px" }}></input>
+          <button style={{ margin: "10px" }} onClick={calcular}>
+            Convertir
+          </button>
+          <div ref={resultadoRef}></div>
+        </div>
+        <Header />
+        <Nav />
+        <Gallery />
+        <Main />
+        <Footer />
+      </div>
+    </>
+  );
+}
+
+function suma(a, b) {
+  return a + b;
+}
+export default App;
