@@ -79,5 +79,32 @@
     "imagen": "/images/bicicletas/BIN4.0-29-azul-blanco.jpg",
     "stock": 7,
     "descripcion": "Bicicleta Raleigh Mojave 4.0 azul/blanco."
+    },
+       {
+    "id": 10,
+    "name": "Raleigh Mojave 4.0 negro/gris",
+    "categoria": "bicicletas",
+    "price": 690000,
+    "imagen": "/images/bicicletas/BIN4.0-29-negro-gris.jpg",
+    "stock": 12,
+    "descripcion": "Bicicleta Raleigh Mojave 4.0 negro/gris."
+    },
+    {
+    "id": 11,
+    "name": "Raleigh Mojave 4.0 azul/blanco",
+    "categoria": "bicicletas",
+    "price": 560000,
+    "imagen": "/images/bicicletas/BIN4.0-29-azul-blanco.jpg",
+    "stock": 7,
+    "descripcion": "Bicicleta Raleigh Mojave 4.0 azul/blanco."
+    },
+     {
+    "id": 12,
+    "name": "Raleigh Mojave 4.0 negro/gris",
+    "categoria": "bicicletas",
+    "price": 680000,
+    "imagen": "/images/bicicletas/BIN4.0-29-negro-gris.jpg",
+    "stock": 12,
+    "descripcion": "Bicicleta Raleigh Mojave 4.0 negro/gris."
     }
 ]

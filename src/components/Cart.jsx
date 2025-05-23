@@ -1,50 +1,63 @@
-import React from 'react';
+import React from "react";
 import "./../styles/styles.css";
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
 
-const Cart = ({ cartItems = [],  vaciarCarrito,  isOpen, onClose, borrarProducto }) => {
-  console.log('Cart recibe cartItems:', cartItems);
+const Cart = ({ isOpen, onClose }) => {
+  const { cart, vaciarCarrito, borrarProducto } = useContext(CartContext);
+
   return (
-    <div id='cart-container' className={`cart-container ${ isOpen ? 'open' : ''}`}>
-      <div className='cart-header'>
-        <h2 className='cart-title'>Carrito</h2>
-        <button onClick={onClose} className='close-button '>X</button>
+    <div
+      id="cart-container"
+      className={`cart-container ${isOpen ? "open" : ""}`}
+    >
+      <div className="cart-header">
+        <h2 className="cart-title">Carrito</h2>
+        <button onClick={onClose} className="close-button ">
+          X
+        </button>
       </div>
 
-      <div className='cart-content'>
-      {(!cartItems || cartItems.length === 0) ? ( <p style={{ color: 'green' }}>Carrito vacío</p> ) : ( 
+      <div className="cart-content">
+        {cart.length === 0 ? (
+          <p>Carrito vacío</p>
+        ) : (
           <>
-            <ul>
-              {cartItems.map((item, index) => (
-                <li key={item.id || index}>
-                          <div className="row ">
-                  <div className="col-5 mx-2  px-3 col-name">
-                
-                  {item.name} 
-                  </div>
-                  <div className="col  px-3 mx-2 ">
-                   ${item.price} 
-                   </div>
-                   <div className="col text-white px-3 mx-2 my-2">
-                   <img src={item.imagen} alt={item.name}  /> 
-                   </div>
-                   <div className="col px-3 mx-2 col-cantidad" >
-                     cant: {item.cantidad}
-                     </div>
-                
-                     <div className="col mx-2 px-3 ">
-                  <button onClick={() => borrarProducto(item)}
-                    className='btn btn-sm btn-outline-success ms-2' >
-                    <i className='fa-solid fa-trash'></i>
-                  </button>
-                  </div>
-                  </div>
-                </li>
-              ))}
-            </ul>
+             <table className="table table-striped align-middle">
+              <thead>
+                <tr>
+                  <th className="text-start">Producto</th>
+                  <th className="text-center">Precio</th>
+                  <th className="text-center">Cantidad</th>
+                  <th className="text-end">Subtotal</th>
+                  <th className="text-center">Acción</th>
+                </tr>
+              </thead>
+              <tbody>
+                {cart.map((item, index) => (
+                  <tr key={item.id || index}>
+                    <td className='text-start'>{item.name}</td>
+                    <td className="text-end">${Number(item.price)}</td>
+                    <td className="text-center">{item.cantidad}</td>
+                    <td className="text-end">
+                      ${Number(item.price * item.cantidad)}
+                    </td>
+                    <td className="text-center">
+                      <button
+                        onClick={() => borrarProducto(item)}
+                        className="btn btn-sm btn-outline-success"
+                      >
+                        <i className="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
 
             <button
               onClick={vaciarCarrito}
-              className='btn btn-success-subtle mt-3'
+              className="btn btn-success-subtle mt-3 btn-vaciar"
             >
               Vaciar carrito
             </button>

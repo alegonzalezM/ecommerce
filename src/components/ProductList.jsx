@@ -4,21 +4,21 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Nav from '../components/Nav'
 import Cart from '../components/Cart'
+import { useContext } from 'react';
+import { CartContext } from '../context/CartContext'
 
 
-const ProductList = ({ productos, addCart, cart, handleAddCart, isCartOpen, setCartOpen, borrarProducto, vaciarCarrito }) => {
+const ProductList = () => { const { productos, addCart, cart, handleAddCart, isCartOpen, setCartOpen, borrarProducto, vaciarCarrito }=useContext(CartContext) 
   return (
   <>
-    {/* <Header/> */}
-    {/* <Nav cartItems={cart}  isCartOpen= {isCartOpen} setCartOpen={setCartOpen} borrarProducto={borrarProducto}/> */}
     <div className='container-gallery' >
-    <h1 style= {{width:'100%', textAlign:'left', margin:'30px 8%'}}>Galería de productos: </h1>
+    <h2 style= {{ color:'#4caf50', width:'100%', textAlign:'left', margin:'30px 8%'}}>Galería de productos: </h2>
       {productos.map((producto) => (
-                <Product key={producto.id} producto={producto} addCart={addCart}  />
+          <Product key={producto.id} producto={producto} addCart={addCart}/>
   ))}
 
    </div>
-      {/* <Footer/> */}
+  {/* <Footer/>  */}
   </>
   )}
 export default ProductList

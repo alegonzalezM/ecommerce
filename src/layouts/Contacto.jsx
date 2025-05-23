@@ -1,19 +1,27 @@
-import React from "react";
-import Nav from '../components/Nav'
+import React, { useState, useContext } from "react";
+import Nav from '../components/Nav';
 import Formulario from "../components/Formulario";
 import Header from "../components/Header";
-import Footer from '../components/Footer'
+import Footer from '../components/Footer';
+import { CartContext } from '../context/CartContext';
 
-const Contacto = ({cart, productos, cartCount, isCartOpen, setCartOpen, borrarProducto, vaciarCarrito, cartItems}) => {
+const Contacto = () => {
+  const { cart } = useContext(CartContext);
+
+  const [cantidad, setCantidad] = useState(1);
+
   return (
     <>
-      <Header cartItems={cart} borrarProducto={borrarProducto}/>
-      <Nav cartItems={cart}  vaciarCarrito={vaciarCarrito} cartCount={cartCount} isCartOpen={isCartOpen} setCartOpen={setCartOpen} borrarProducto={borrarProducto}/>
-      <h1 style={{textAlign:'left', margin:'30px 5%'}}> Contacto</h1>
-
+      <Header cartItems={cart} />
+      <Nav />
+      
+      <h2 style={{ textAlign: 'left', margin: '30px 5%' }}>Formulario de contacto: </h2>
+      <Formulario />
       <Footer />
+
     </>
   );
 };
 
 export default Contacto;
+

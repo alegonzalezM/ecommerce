@@ -14,7 +14,7 @@ const DetalleProducto = ({ productos }) => {
     <div className="container-detalleProducto">
       <h2 style={{textAlign:'left', margin:'20px'}}>Detalle del producto {id}</h2>
       <div style={{textAlign:'left', margin:'20px'}}>
-      {product ? <p>{product.name} {product.price}</p> : <h3>Producto no encontrado</h3>}
+      {product ? <p>{product.name}  {product.price} <br/><br/>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus corporis, pariatur atque cumque vel quia molestiae autem architecto quisquam? Voluptatibus atque repellendus porro quis facere expedita optio doloribus rem ducimus.</p>:<h3>Producto no encontrado</h3>}
     </div>
     </div>
     </>
