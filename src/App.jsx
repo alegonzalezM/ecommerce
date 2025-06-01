@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { useEffect, useState, useContext } from "react"
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {  Routes, Route } from 'react-router-dom';
 import Home from "./layouts/Home"
 import ProductList from './components/ProductList'
 import AcercaDe from "./layouts/AcercaDe"
@@ -19,7 +19,7 @@ function App() {
   const {cart, productos, carga, error, datosAPI, isAuthenticated, cartCount, isCartOpen, setCartOpen, handleAddCart, borrarProducto} = useContext(CartContext)  
 return (  
     <>
-  <Router>  
+ 
        <Routes>
       
        <Route path='/' element={<Home />} />
@@ -28,11 +28,13 @@ return (
 
       <Route path='/acercade' element={<AcercaDe /> }/>
       
-      <Route path='/contacto' element={<Contacto datosAPI={datosAPI} />}/>
+      <Route path='/contacto' element={<Contacto />}/>
 
-      <Route path='/productos/:id' element={ <DetalleProducto productos={productos}/>}/>
+      <Route path='/productos/:id' element={ <DetalleProducto />}/>
 
       <Route path='/admin' element={ <RutaProtegida isAuthenticated={isAuthenticated}><Admin /></RutaProtegida> } />
+{/* 
+      <Route path='/cart' element={ <RutaProtegida isAuthenticated={isAuthenticated}><ProductList /></RutaProtegida> } /> */}
     
       <Route path="/login" element={<Login />} />
     
@@ -40,7 +42,6 @@ return (
       
 
 </Routes>
-</Router>
 
     </>
   )}

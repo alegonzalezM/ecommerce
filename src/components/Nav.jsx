@@ -7,7 +7,7 @@ import { CartContext } from '../context/CartContext'
 
 
 const Nav = () => {
-  const { cartCount, isCartOpen, setCartOpen, borrarProducto, vaciarCarrito, cart } =  useContext(CartContext);
+  const { isCartOpen, setCartOpen, vaciarCarrito} =  useContext(CartContext);
   
 
   const showCart= (e) => {
@@ -52,13 +52,12 @@ const Nav = () => {
           <li><Link to='/login' className="link">Login</Link></li>
           {/* <li>Carrito: {cartCount}</li> */}
           <button className="btn-show-cart" onClick={()=> {
-                setCartOpen(true)}}
-            style={{ marginLeft: "2rem", padding: "5px" }}>
+                setCartOpen(true)}}>
            Ver carrito 
            <i className="fa-solid fa-cart-shopping mx-1"></i>
           </button>
-          <Cart  cartItems={cart}  isOpen={isCartOpen}  vaciarCarrito={vaciarCarrito} 
-  borrarProducto={borrarProducto}  isCartOpen={isCartOpen}  onClose={()=> setCartOpen(false)} />
+          <Cart isOpen={isCartOpen}  vaciarCarrito={vaciarCarrito} 
+  isCartOpen={isCartOpen}  onClose={()=> setCartOpen(false)} />
         </ul>
       </nav>
       <div></div>

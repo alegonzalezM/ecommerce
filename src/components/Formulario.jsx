@@ -21,7 +21,7 @@ export default function Formulario() {
   };
   return (
  
-    <form className='form-control ' onSubmit={manejarEnvio}>
+    <form className='form-control ' id='form-contacto' onSubmit={manejarEnvio}>
      <label>Nombre: </label> <input className="form-input form-control-sm bg-success-subtle"
           type="text"
           name="nombre"

@@ -2,13 +2,10 @@ import React from 'react'
 import Nav from '../components/Nav'
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { useContext } from 'react';
-import { CartContext } from '../context/CartContext';
 
-const AcercaDe=() => { const {cart, productos, cartCount, isCartOpen, setCartOpen, borrarProducto, vaciarCarrito, cartItems} = useContext(CartContext);
+const AcercaDe=() => { 
 
 return (
-
     <>
         <div className='acercaDe-container' style={{padding:'20px' }}>
 <Header/>
@@ -31,6 +28,5 @@ return (
         </div>
         </>
     )
-
 }
  export default AcercaDe

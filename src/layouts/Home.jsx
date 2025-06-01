@@ -8,7 +8,7 @@ import { CartContext } from '../context/CartContext';
 import MuestraAPI from '../components/MuestraAPI'
 
 
-const Home = () => { const { cart, productos, carga, addCart, agregarCarrito, handleAddCart,borrarProducto, vaciarCarrito, isCartOpen, cartCount, setCartOpen, cargaAPI, datosAPI } = useContext(CartContext);
+const Home = () => { const { carga, cargaAPI, datosAPI } = useContext(CartContext);
  
          return(
             <>

@@ -53,7 +53,7 @@ export const CartProvider = ({children}) =>{
   const vaciarCarrito=()=>{
   setCart([]);
   };
-
+  
 /*----DATOS CARGADOS DESDE MOCKAPI--------*/
 
 useEffect(()=>{  
@@ -94,7 +94,7 @@ fetch("https://6814cc8c225ff1af162a23f1.mockapi.io/bicycles")
       if (error) return <h2>Error al cargar los productos.</h2>; 
       
     return(
-    <CartContext.Provider value={{ borrarProducto, productos, vaciarCarrito, setCart,carga, setCargaAPI, cargaAPI, error, handleAddCart, cart, isCartOpen, setCartOpen, isAuthenticated, setAuthenticated, datosAPI}} >
+    <CartContext.Provider value={{ borrarProducto, productos, vaciarCarrito, setCart,carga, setCargaAPI, cargaAPI, error, setError, handleAddCart, cart, isCartOpen, setCartOpen, isAuthenticated, setAuthenticated, datosAPI}} >
     {children}
     </CartContext.Provider>
  )}

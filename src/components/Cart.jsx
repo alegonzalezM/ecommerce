@@ -1,10 +1,25 @@
 import React from "react";
 import "./../styles/styles.css";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { CartContext } from "../context/CartContext";
+import { useNavigate, useLocation } from 'react-router-dom';
+
 
 const Cart = ({ isOpen, onClose }) => {
-  const { cart, vaciarCarrito, borrarProducto } = useContext(CartContext);
+  // const [isAuthenticated, setAuthenticated]= useState(false);
+  // const navigate = useNavigate();
+  // const location = useLocation();
+  const { cart, vaciarCarrito, borrarProducto} = useContext(CartContext);
+
+  //   const finalizarCompra = () => {
+  //   if (!isAuthenticated) {
+  //     // Guardamos la ubicación actual en el estado
+  //     navigate('/login', { state: { from: location } });
+  //   } else {
+  //     setAuthenticated(true)
+  //     navigate('/', { state: { from: location } });
+  //   }
+  // };
 
   return (
     <div
@@ -50,11 +65,14 @@ const Cart = ({ isOpen, onClose }) => {
                         <i className="fa-solid fa-trash"></i>
                       </button>
                     </td>
+                 
                   </tr>
+
                 ))}
               </tbody>
+  
             </table>
-
+             {/* <button className="btn-comprar" onClick={finalizarCompra}>Finalizar compra</button> */}
             <button
               onClick={vaciarCarrito}
               className="btn btn-success-subtle mt-3 btn-vaciar"

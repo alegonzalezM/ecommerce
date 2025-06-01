@@ -9,7 +9,7 @@ const Header=({ cartItems, borrarProducto }) =>{
  return(
     <header >
     
-       <ul className="lista-contacto d-flex flex-row gap-5">
+       <ul className="lista-contacto ">
          <li className=""><i className='fa-brands fa-whatsapp icono' ></i>Tel:011 3333333</li>
          <li><i className='fa-solid fa-phone icono' ></i>Tel:011 3333333</li>
          <li><i className="fa-regular fa-envelope icono"></i>urbanbikes@gmail.com</li>

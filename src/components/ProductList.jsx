@@ -8,13 +8,15 @@ import { useContext } from 'react';
 import { CartContext } from '../context/CartContext'
 
 
-const ProductList = () => { const { productos, addCart, cart, handleAddCart, isCartOpen, setCartOpen, borrarProducto, vaciarCarrito }=useContext(CartContext) 
+const ProductList = () => { 
+
+  const { productos, addCart }=useContext(CartContext) 
   return (
   <>
     <div className='container-gallery' >
     <h2 style= {{ color:'#4caf50', width:'100%', textAlign:'left', margin:'30px 8%'}}>Galería de productos: </h2>
       {productos.map((producto) => (
-          <Product key={producto.id} producto={producto} addCart={addCart}/>
+          <Product key={producto.id} producto={producto} />
   ))}
 
    </div>
