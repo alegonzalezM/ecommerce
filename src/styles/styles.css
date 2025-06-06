@@ -566,7 +566,8 @@ footer {
     max-width: 95%;
 }}
 @media  (max-width: 780px)	{
-nav ul{
+@media  (max-width: 780px)	{
+.lista-contacto{
   width: 100%;
   flex-direction: column;
   flex-wrap: wrap;
