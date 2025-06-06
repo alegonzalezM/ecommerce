@@ -550,7 +550,7 @@ footer {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-
+  align-items:center;
 }
 /*------------------------BREAKPOINTS-------------------------------------------*/
 @media (max-width: 991.98px)	{
