@@ -67,6 +67,7 @@ header {
 .lista-contacto {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   column-gap: 70px;
 }
@@ -578,25 +579,19 @@ nav ul{
   padding: 0.5em;
 }
 .lista-contacto {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   padding: .7rem 0.2rem ;
       overflow-x: hidden;
 
 } 
-.lista-contacto{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
+
 #form-contacto {
   width:90%;
   margin:auto;
 }
-/* .lista-contacto li {
-  /* padding: .5rem 0.2rem 1rem 0.2rem; */
- 
+
 .card-news{
   width: 45%;
   margin:1rem;
@@ -615,5 +610,8 @@ nav ul{
   margin:auto;
 }
 }
+
+
+
 
 
