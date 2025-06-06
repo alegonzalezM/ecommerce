@@ -12,6 +12,7 @@ const Home = () => { const { carga, cargaAPI, datosAPI } = useContext(CartContex
  
          return(
             <>
+            <div className="container-fluid">
             <Header />
             <h1>Bienvenidos</h1>
             <p style={{width:'50%', margin: '.5em auto'}}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis in est enim molestiae, ducimus maiores fugit odio magnam blanditiis exercitationem incidunt architecto. Quos repellendus esse sint quod facilis soluta odit!</p>
@@ -25,6 +26,7 @@ const Home = () => { const { carga, cargaAPI, datosAPI } = useContext(CartContex
         }
             <MuestraAPI datosAPI={datosAPI}/>
             <Footer/>
+        </div>
      </>    
         )}
 export default Home;
