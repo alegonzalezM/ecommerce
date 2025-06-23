@@ -107,6 +107,7 @@
     "categoria": "bicicletas",
     "price": 230000,
     "imagen": "/images/bicicletas/BINJAZZI.jpg",
+    "otrasImagenes" :[[ 2, "/images/bicicletas/BINJAZZI-V.jpg"]],
     "stock": 18,
     "descripcion": ["Cuadro de aluminio", "Horquilla de aluminio", "Frenos V-brake", "Llantas de aluminio 48 rayos", "Canasto y portamuñecas"]
     }

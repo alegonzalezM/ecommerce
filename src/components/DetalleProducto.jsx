@@ -8,23 +8,21 @@ import { CartContext } from "../context/CartContext";
 const DetalleProducto = () => {
      const { productos }= useContext(CartContext) 
   const { id } = useParams();
-  // console.log(id, productos);
 
   const product = productos.find(producto => producto.id==id);
-  console.log("Productos:", productos);
   return (
  <>
     {/* <Header /> */}
     <div className="container-detalleProducto">
-      <h1 style={{textAlign:'left', margin:'10px'}}>Detalle del producto</h1>
+      <h1 style={{textAlign:'left', margin:'10px'}} id='detalle-title'>Detalle del producto</h1>
       <div style={{textAlign:'left', margin:'10px', color:' 	#333333 '}}>
      
        <h3>Categoría:<span style={{color:'var(--palette-1'}}> {product.categoria}  </span></h3><br/>
          { product ? <div className='container-detalle-nombre'>{product.name}  <br/><br/>
         <span className='container-detalle-imagenes'>
-       <img src={product.imagen} alt={product.name} style={{ maxWidth: '350px', height: 'auto', margin:'1em' }}  />
+       <img src={product.imagen} alt={product.name} style={{ maxWidth: '23%', height: 'auto', margin:'1em' }}  />
        {product.otrasImagenes && product.otrasImagenes.map(([id, url], index) => (
-  <img key={id} src={url} alt={`${product.name} ${index + 1}`} style={{ maxWidth: '250px', margin: '1em', }}  />
+  <img key={id} src={url} alt={`${product.name} ${index + 1}`} style={{ maxWidth: '23%', margin: '1em', }}  />
 ))}   </span>  
 {Array.isArray(product.descripcion) && (
        <ul> 

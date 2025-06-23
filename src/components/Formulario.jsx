@@ -50,7 +50,7 @@ export default function Formulario() {
          onChange={manejarCambio}
          placeholder="Teléfono"
       />
-      <button type="submit" className="btn bg-success-subtle mt-4 btn-enviar w-25">Enviar</button>
+      <button type="submit" id='btn-enviar' className="btn bg-success-subtle mt-4 mb-5  w-25">Enviar</button>
     </form>
 
   );

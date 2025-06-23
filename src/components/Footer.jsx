@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { useContext } from 'react';
 import { CartContext } from '../context/CartContext';
 
@@ -7,14 +7,14 @@ import { CartContext } from '../context/CartContext';
 const Footer= () =>{
     return(
   <>
-    <div className="navFooter" style={{  }}>
+    <div className="navFooter">
       <nav >
-        <ul>
+        <ul style={{ marginBottom:'.5rem'  }}>
     
-          <li><Link to='/' className="link">Inicio</Link></li>
-          <li><Link to='/acercade' className="link">Acerca de</Link></li>
-          <li><Link to='/contacto' className="link">Contacto</Link></li>
-          <li><Link to='/login' className="link">Login</Link></li>
+          <li><NavLink to='/' className="link">Inicio</NavLink></li>
+          <li><NavLink to='/acercade' className="link">Acerca de</NavLink></li>
+          <li><NavLink to='/contacto' className="link">Contacto</NavLink></li>
+          <li><NavLink to='/login' className="link">Login</NavLink></li>
 
         </ul>    
 

@@ -3,23 +3,13 @@ import "./../styles/styles.css";
 import { useContext, useState } from "react";
 import { CartContext } from "../context/CartContext";
 import { useNavigate, useLocation } from 'react-router-dom';
+import RutaProtegida from '../auth/RutasProtegidas';
+import { useAuth } from '../context/AuthContext';
 
 
 const Cart = ({ isOpen, onClose }) => {
-  // const [isAuthenticated, setAuthenticated]= useState(false);
-  // const navigate = useNavigate();
-  // const location = useLocation();
-  const { cart, vaciarCarrito, borrarProducto} = useContext(CartContext);
 
-  //   const finalizarCompra = () => {
-  //   if (!isAuthenticated) {
-  //     // Guardamos la ubicación actual en el estado
-  //     navigate('/login', { state: { from: location } });
-  //   } else {
-  //     setAuthenticated(true)
-  //     navigate('/', { state: { from: location } });
-  //   }
-  // };
+  const { cart, vaciarCarrito, borrarProducto, handleFinalizarCompra} = useContext(CartContext);
 
   return (
     <div
@@ -55,24 +45,31 @@ const Cart = ({ isOpen, onClose }) => {
                     <td className="text-end">${Number(item.price)}</td>
                     <td className="text-center">{item.cantidad}</td>
                     <td className="text-end">
-                      ${Number(item.price * item.cantidad)}
-                    </td>
+                      ${Number(item.price * item.cantidad)}</td>
                     <td className="text-center">
-                      <button
-                        onClick={() => borrarProducto(item)}
-                        className="btn btn-sm btn-outline-success"
-                      >
-                        <i className="fa-solid fa-trash"></i>
+                      <button onClick={() => borrarProducto(item)}
+                        className="btn btn-sm btn-outline-success"><i className="fa-solid fa-trash"></i>
                       </button>
                     </td>
-                 
                   </tr>
 
                 ))}
+                  <tr>
+                     <td colSpan="2" className="text-start fw-bold">Total:</td>
+                     <td colSpan='2' className="text-end fw-bold text-success" id="precio-final">
+      ${cart.reduce((acc, item) => acc + item.price * item.cantidad, 0).toLocaleString('es-AR')}</td>
+                     <td></td>
+                  </tr>
+                <tr>
+                   <td></td>
+                   <td></td>
+                  <td colSpan='3'>  
+                    <button className="btn-comprar" onClick={ (handleFinalizarCompra) }>Finalizar compra</button></td>
+                </tr>
               </tbody>
-  
             </table>
-             {/* <button className="btn-comprar" onClick={finalizarCompra}>Finalizar compra</button> */}
+ 
+           
             <button
               onClick={vaciarCarrito}
               className="btn btn-success-subtle mt-3 btn-vaciar"
@@ -82,6 +79,8 @@ const Cart = ({ isOpen, onClose }) => {
           </>
         )}
       </div>
+    <div className="cart-footer"> 
+    </div>
     </div>
   );
 };

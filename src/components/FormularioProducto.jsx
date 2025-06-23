@@ -28,8 +28,8 @@ const FormularioProducto= ({ onAgregar }) => {
     return(
         <>
     <div className='container-formularioProd '>
-   <form onSubmit={handleSubmit} className='form-control m-3 p-3 text-secondary border border-2'>
-   <h2>Agregar nuevo producto </h2>
+   <form onSubmit={handleSubmit} className='form-control m-3 p-3 text-secondary border border-2' >
+   <h2 id="formularioProd-title">Agregar nuevo producto </h2>
     <div className='m-2 text-start'>
       <label className='tx-form'>Nombre: </label>
       <input type='text' className='rounded-1' name='name' value={producto.name} onChange={handleChange} required />
@@ -42,16 +42,29 @@ const FormularioProducto= ({ onAgregar }) => {
     </div>
     <div className='m-2 text-start'>
         <label className='tx-form '>Descripción: </label>
-        <input type='text' className='rounded-1' name='description' value={producto.description} onChange={handleChange} required />
+        <input type='text' className='rounded-1' name='description' maxLength={25} value={producto.description} onChange={handleChange} required />
            {errores.description  && <p className="text-danger">{errores.description}</p> }
      </div>
-     <div className='m-2 text-start'>
+     {/* <div className='m-2 text-start'>
         <label className='tx-form'>Categoría: </label>
         <input type='text' className='rounded-1' name='avatar' value={producto.avatar} onChange={handleChange} required />
            {errores.avatar  && <p className="text-danger">{errores.avatar}</p> }
-     </div>
-
-   <button type='submit' className='text-end pe-5 border border-1' >Agregar</button> 
+     </div> */}
+     <div className='m-2 text-start w-50'> 
+         {/* <label className='tx-form'>Categoría: </label> */}
+  <select className='rounded-1 form-select' name='avatar' value={producto.avatar} onChange={handleChange} required >
+    <option value="">Seleccione una categoría</option>
+    <option value="Bicicletas">Bicicletas</option>
+    <option value="Repuestos">Repuestos</option>
+    <option value="Accesorios">Accesorios</option>
+    <option value="Usados">Usados</option>
+    <option value="Novedades">Novedades</option>
+    <option value="Varios">Varios</option>
+  </select>
+  
+   {errores.avatar && <p className="text-danger">{errores.avatar}</p>}
+ </div>
+   <button type='submit' className='btn-submit-form'>Agregar</button> 
    
    </form>  
    </div>

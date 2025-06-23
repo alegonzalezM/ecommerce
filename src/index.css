@@ -7,10 +7,11 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
-  font-synthesis: none;
+  font-synthesis: none;  /*propiedades de suavizado de fuentes mejoran la representación tipográfica.*/
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 a {
@@ -24,10 +25,9 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  width:100%;
 }
 
 h1 {
@@ -54,7 +54,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: light) {   /*cambiar automáticamente los temas en función de las preferencias del usuario.*/
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -66,3 +66,10 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+ /*Usar unidades remen lem(especialmenteh1, `bbutton, etcmás consistente y predecible, de
+
+remno enciendehtml),em). em todavía es útil cuando quieres que el tamaño sea relativo al contenedor o al elemento padre, como en componentes reusables o iconos SVG.
+
+Pero para elementos clave como botones, encabezados y márgenes globales, rem suele ser más claro.
+
+*/

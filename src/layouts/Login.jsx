@@ -4,35 +4,42 @@ import { useNavigate } from 'react-router-dom';
 
 const Login= () =>{
   const {user, email, setEmail, pass, setPass, handleSubmit, error} = useAuth();
-
-    // const [email, setEmail] = useState('');
-    // const [pass, setPass] = useState('');
-    // const [error, setError] = useState({});
-    // const navigate = useNavigate();
-   
-    
+  
     return(
+      <>
+      <div className="login-wrapper">
+        <div className='overlay'></div>
         <div className='container-login'>
-    <h1 className='' style={{textAlign:'left', margin:'.5em'}}>Login</h1>
-    <div style={{ }}>
-
-    <form className='form-control bg-light text-dark'  onSubmit={handleSubmit} style={{ borderRadius: '25px', border: '1px solid green' }}>
+        <h1 className='login-title'>Login</h1>
+   
+    <form className='form-login'  onSubmit={handleSubmit}>
       
-    <label className='m-3'>Email: <input id='form-login' type='email' value={email} placeholder='Ingrese su email'
-      onChange={(e) => setEmail(e.target.value)} style={{ border: `1px solid ${error.email ? 'red' : 'green'}` }} ></input>
-      </label>
-    
-    <label className='m-3'>Contraseña: <input type='password' id='form-pass' placeholder='Ingrese contraseña' value={pass}
-      onChange={(e) => setPass(e.target.value)} style={{ border: `1px solid ${error.pass ? 'red' : 'green'}` }}></ input></label>
+    <div className='form-login-div'  style={{ backgroundColor: `${error.email ? 'rgb(255,255,255,.5)' : 'rgb(90, 181, 7,.7)'}` }} ><i className="fa-solid fa-unlock-keyhole fa-2x"></i><input  type='email' name='email' value={email} placeholder='Email' autoComplete='email'
+      onChange={(e) => setEmail(e.target.value)}></input></div>
+   
+    <div className='form-login-div'  style={{ backgroundColor: ` ${error.email ? 'rgb(255,255,255,.5)' : 'rgb(90, 181, 7,.6)'}` }}><i className="fa-solid fa-user-tie fa-2x"></i><input type='password' name='password' placeholder='●●●●●●●●●●'   autoComplete="current-password" value={pass}
+      onChange={(e) => setPass(e.target.value)}></ input></div>
 
 
-      <button type="submit" className="btn-submit w-25 m-3">Ingresar</button>
+      <button type="submit" className="btn-submit">Ingresar</button>
       
    </form>
     
-    {error.email && ( <div style={{color: 'red' }}> {error.email} </div>) }
-    {error.pass && ( <div style={{color: 'red' }}> {error.pass} </div>) }
+    {error.email && ( <div style={{color: '#FF074A', zIndex :'99', fontSize:'18px' }}> {error.email} </div>) }
+    {error.pass && ( <div style={{color: 'black', zIndex :'99' }}> {error.pass} </div>) }
     </div>
-</div>
-    )}
+    </div>
+</>
+    )
+
+  }
 export default Login;
+
+//  Para que el autocompletado de email funcione correctamente en HTML/React:
+// El input debe tener:
+
+// type="email"
+
+// name="email"
+
+// autoComplete="email"
