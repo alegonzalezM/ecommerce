@@ -4,6 +4,9 @@ import { CartContext } from "../context/CartContext";
 
 const ProductList = () => {
   const { productosFiltrados, busqueda, setBusqueda } = useContext(CartContext);
+  const bicicletas = productosFiltrados.filter(p =>
+    p.categoria && p.categoria.toLowerCase() === "bicicletas"
+  );
 
   return (
     <>
@@ -28,8 +31,9 @@ const ProductList = () => {
           Galería de productos:
         </h2>
 
-        {productosFiltrados.length > 0 ? (
-          productosFiltrados.map((producto) => (
+
+        {bicicletas.length > 0 ? (
+          bicicletas.map((producto) => (
             <Product key={producto.id} producto={producto} />
           ))
         ) : (

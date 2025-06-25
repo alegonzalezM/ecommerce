@@ -26,7 +26,7 @@ import Pagination from 'react-bootstrap/Pagination'
 
                 <div className="card-news-description">{dato.description}</div>
                 <div className="card-news-price mt-2"><strong>${dato.price}</strong></div>
-                <div className="card-news-stock ">Stock: {dato.stock}</div>
+                {/* <div className="card-news-stock ">Stock: {dato.stock}</div> */}
         
             </section>
          

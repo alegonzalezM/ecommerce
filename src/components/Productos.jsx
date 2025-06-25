@@ -26,6 +26,7 @@ const handleClick = (producto) => {
   } else {
     handleAddCart({ ...producto, cantidad });
   }
+
 };
   return (
     <>

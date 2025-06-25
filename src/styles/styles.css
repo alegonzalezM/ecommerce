@@ -15,7 +15,6 @@
   --toastify-color-light:rgb(90, 181, 7, .3);
   --toastify-color-transparent: rgba(255, 255, 255, 0.7);
   --toastify-toast-width: 160px;
-
   --toastify-text-color-info: #fff;
 
   /*  SPACING  */
@@ -179,7 +178,6 @@ margin-left:5px;
 .navFooter a:hover{
   color: var(--palette-5);
 }
-
 .submenu {
   position: relative;
   background-color: var(--palette-1);
@@ -189,7 +187,7 @@ margin-left:5px;
 .sublista {
   position: absolute;
   display: none;
-  top: 110%;
+  top: 109%;
   left: 0px;
   align-items:start;
   background-color: var(--palette-1);
@@ -212,14 +210,14 @@ a[href^="mailto"] , a[href^="https"] {
  }
 a[href^="mailto"]:hover, a[href^="https"]:hover {
   color:var(--palette-2);
-
 }
+ a[href^="https://wa.me"]{
+width:50%;
+ }
 .link.active{
   color:#f4cd21;
   color:#0f4da8;;
 }
-
-
 #container-bike {
   display: flex;
   flex-direction: column;
@@ -229,7 +227,6 @@ a[href^="mailto"]:hover, a[href^="https"]:hover {
   margin: 0.6rem;
   max-width: 25%;
   border-radius: 4px;
-
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 #container-titulo {
@@ -242,9 +239,6 @@ a[href^="mailto"]:hover, a[href^="https"]:hover {
   justify-content: space-around;
   font-family: var(--font-alternative);
 }
-/* #container-bike h3:hover {
-  color: #4bae4f;
-} */
 .col-card-img img:hover {
   box-shadow: 2px 1px 2px 1px var(--color-shadow);
   /* transform: scale(1.1); */
@@ -269,14 +263,6 @@ a[href^="mailto"]:hover, a[href^="https"]:hover {
   height:30px;
   padding: 2px;
 }
-/* .form-control {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  margin-left: var(--spacing-xlg);
-  padding-bottom: 30px;
-  border: 3px solid red;
-} */
 .form-control label {
   text-align: left;
   margin: 0.4em;
@@ -381,10 +367,11 @@ i {
 }
 /* PRODUCTOS */
 
-.col-card-name {
+.col-card-name, .col-card-stock {
+  font-family: var(--font-main);
   width: 15em;
-  height: 3em;
-  margin: .3em auto;
+  height: 1.5rem;
+  margin: .5em auto;
 }
 .container-gallery {
   display: flex;
@@ -414,10 +401,20 @@ i {
   height:9em;
   display: flex;
   margin: auto;
+  margin-bottom: 0;
+  padding-bottom: 0;
+
 }
 .col-card-img img {
   margin:auto;
   align-content: center;
+ margin-bottom: 0;
+}
+.col-card-price{
+  color:var(--palette-2);
+  font-family: var(--font-alternative);
+  font-size: large;
+  text-shadow: 2px black;
 }
 .product-btn {
   margin: 10px;
@@ -456,9 +453,6 @@ i {
   border-radius: 3px;
   background-color: rgb(185, 251, 192, .3);
   box-shadow: 2px 2px #ccc;
-}
-#input-busqueda:focus, #input-busqueda-API:focus{
-/* outline:#89d631; */
 }
 
 /*  ACERCADE  */
@@ -570,6 +564,9 @@ a.page-link {
   color:var(--palette-2);
   border: .5px solid var(--palette-2);
 }
+.pagination a[href="#"]:hover{
+  color:#8e24aa;
+ }
 .pagination .page-item.active {
  background-color:var(--palette-4);
  padding: 1px 8px;                                      
@@ -578,7 +575,6 @@ a.page-link {
   background-color: #ccc;
   border: 1px solid var(--palette-4);
    padding: 1px 8px; 
-
 }
 .page-item.a{
   color:#89d631;
@@ -709,6 +705,13 @@ nav .fa-user-tie{
 .container-admin{
   flex-direction: column;
 }
+.col-card-price-admin{
+  color:var(--palette-2);
+  font-family: var(--font-alternative);
+  font-size: large;
+  text-shadow: 2px black;
+}
+
 .title-admin{
   text-align: left;
   margin-left:7%;
@@ -808,6 +811,17 @@ color:var(--palette-4)
   flex-wrap: nowrap;
   width:100%;
 }
+/***CATEGORY****/
+.container-category{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-category>h2{
+  align-self: flex-start;
+  margin:2rem;
+ padding-left: 2rem;
+}
 /*-------BREAKPOINTS-----------------*/
 @media (max-width: 1280px){
   .container-gallery{
@@ -839,6 +853,9 @@ color:var(--palette-4)
 }
 }
 @media (max-width: 992px)	{
+.cart-container{
+  width:50%;
+}
  .card-bike{
   margin:.6rem;
  }
@@ -880,6 +897,10 @@ color:var(--palette-4)
     max-width: 95%;
 }}
 @media (max-width: 768px)	{
+.cart-container{
+  width:60%;
+  height:fit-content;
+}
 .container-login{
   min-width:98%;
 }
@@ -934,9 +955,6 @@ div[class=col-3]{
 .container-formularioProd input{
 width:80%;
 }
-.container-edicion {
-  /* width: 90%; */
-}
 div[class=col-3]{
   display: flex;
   flex-direction: column;
@@ -964,6 +982,10 @@ div[class=col-3]{
   width:50%;
   margin:10px 25% ;
   justify-content: center;
+}
+.cart-container{
+  width:80%;
+  height:fit-content;
 }
 .form-login{
   width: 100%;
@@ -1032,7 +1054,7 @@ nav li{
 .sublista{
   visibility: hidden;
 }
+.Toastify{
+  width: 50px;
 }
-
-
-
+}

@@ -10,6 +10,15 @@ import WhatsApp from "./WhatsAppWidget";
 const Header = () => {
   const [isCartOpen, setCartOpen] = useState(false);
 
+  const handleClick = (e) => {
+    e.preventDefault();
+    const url = "https://wa.me/541133333333";
+    const width = window.innerWidth * 0.5;
+    const height = window.innerHeight * 0.8;
+    const specs = `width=${width},height=${height},resizable=yes,scrollbars=yes`;
+    window.open(url, "whatsappWindow", specs);
+  };
+
   return (
     <header>
       <div className="container-header">
@@ -23,7 +32,7 @@ const Header = () => {
            {/* <a href="https://wa.me/541133333333" target="_self" rel="noopener noreferrer" > */}
      <div className="whatsapp-container">
   <FaWhatsapp color="rgb(90, 181, 7)" fontSize="1.3rem" />
- <a href="https://wa.me/541133333333" target='_blank' className="whatsapp-link" rel="noopener noreferrer" >
+ <a href="https://wa.me/541133333333" onClick={handleClick} target='_blank' className="whatsapp-link" rel="noopener noreferrer" >
     Escribinos por WhatsApp
     <br />
     011 3333-3333

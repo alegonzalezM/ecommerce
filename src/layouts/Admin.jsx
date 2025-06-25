@@ -48,14 +48,13 @@ const Admin= () => {
         <h1 className='title-admin'>Panel administrativo</h1>  
         <ul className='list d-flex' style={{justifyContent:'center'}}>
                { productos.map((product) => (
-                    <li key={product.id} className='listItem'>
-                        <div className= 'listItemImage'><img src={product.image}  alt={product.name} style={{ margin:'auto', width:'5em' }}/></div>
-                       <div className="col ">{product.name} </div>
-      <div className="col col-card-price m-1">${product.price} </div>
-      <div className="col col-card-stock m-1" style={{ margin:'auto', width:'6em' }}>Categoría: {product.avatar} </div>
-       <div className="col col-card-price m-1">${product.description} </div>
-                        <div>
-                        <button className='editButton btn btn-secondary btn-sm m-2' onClick={()=>{
+                  <li key={product.id} className='listItem'>
+                    <div className= 'listItemImage'><img src={product.image}  alt={product.name} style={{ margin:'auto', width:'5em' }}/></div>
+                    <div className="col ">{product.name} </div>
+       <div className="col col-card-price m-1">${product.price} </div>
+       <div className="col col-card-avatar m-1" style={{  }}><u>Categoría:</u> {product.avatar} </div>
+       <div className="col col-card-description m-1">{product.description} </div>
+       <div><button className='editButton btn btn-secondary btn-sm m-2' onClick={()=>{
                             setOpenEditor(true)
                             setSeleccionado(product)
                             setTimeout(() => {

@@ -5,15 +5,14 @@ import Home from "./layouts/Home"
 import AcercaDe from "./layouts/AcercaDe"
 import Contacto from "./layouts/Contacto"
 import Galeria from './layouts/Galeria'
-import NotFound from './layouts/NotFound';
 import DetalleProducto from "./components/DetalleProducto";
 import RutaProtegida from "./auth/RutasProtegidas";
 import Login from "./layouts/Login";
 import Admin from './layouts/Admin';
 import Cart from './components/Cart';
-import { CartContext } from "./context/CartContext";
-import { useAuth } from "./context/AuthContext";
-import { AuthProvider } from "./context/AuthContext";
+import PaginaConDelay from "./components/PaginaConDelay";
+import CategoryPage from "./components/CategoryPage";
+import NotFound from './layouts/NotFound';
 
 function App() {
 
@@ -33,6 +32,10 @@ return (
       <Route path='/productos/:id' element={ <DetalleProducto />}/>
 
       <Route path="/login" element={<Login />} />
+
+      <Route path="/categoria/:category" element={<CategoryPage />} />
+
+      <Route path="/login-delay" element={<PaginaConDelay />} />
 
       <Route path='/admin' element={ <RutaProtegida  requiredRole='admin' ><Admin /></RutaProtegida> } />
       

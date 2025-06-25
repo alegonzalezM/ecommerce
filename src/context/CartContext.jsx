@@ -3,6 +3,7 @@ import loading from '../assets/loading.gif'
 import {toast, Zoom } from 'react-toastify'
 import { useAuth } from '../context/AuthContext'; 
 import { useNavigate } from 'react-router-dom';
+import PaginaConDelay from '../components/PaginaConDelay';
 
 export const CartContext= createContext();
 export const CartProvider = ({children}) =>{
@@ -19,6 +20,8 @@ export const CartProvider = ({children}) =>{
   const [datosAPI, setDatosAPI]= useState( [] )
   const [busqueda, setBusqueda] = useState("")
   const [busquedaAPI, setBusquedaAPI]= useState('')
+  const[categoria, setCategoria]= useState('todas')
+
 
   const cartCount = cart.reduce((total, item) => total + item.cantidad, 0);
   const cantTotal= cart.reduce((acc, item) => acc + item.cantidad, 0); //calcula cant de items en el carrito
@@ -60,11 +63,14 @@ fetch("https://6814cc8c225ff1af162a23f1.mockapi.io/bicycles")
 
   const productosFiltrados= productos.filter((producto) => producto?.name.toLowerCase().includes(busqueda.toLowerCase() ))
   const productosFiltradosAPI= datosAPI.filter((product) => product?.name.toLowerCase().includes(busquedaAPI.toLowerCase() ))
+  const porCategorias=  productos.filter(p => categoria === "todas" ? true : productos.categoria === categoria
+);
 
   const handleAddCart = (product) => {
 
       if (!isAuth) {
-    navigate("/login");
+        navigate("/login-delay");
+    // navigate("/login");
     return;
   }
 
@@ -124,13 +130,9 @@ setCart(prevCart => [...prevCart, { ...product, cantidad: product.cantidad }]);
 
     }
   };
-
-       if (carga) {return <img src={loading} alt="loading" />;
-       }
-      if (error) return <h2>Error al cargar los productos.</h2>; 
       
     return(
-    <CartContext.Provider value={{ borrarProducto, productos, vaciarCarrito, setCart,carga, setCargaAPI, cargaAPI, error, setError, handleAddCart, cart, isCartOpen, setCartOpen, isAuthenticated, setIsAuth, datosAPI, productosFiltrados, productosFiltradosAPI, busqueda, setBusqueda, busquedaAPI, setBusquedaAPI, cantTotal, handleFinalizarCompra}} >
+    <CartContext.Provider value={{ carga, error, setError,  borrarProducto, productos, vaciarCarrito, setCart, setCargaAPI, cargaAPI, handleAddCart, cart, isCartOpen, setCartOpen, isAuthenticated, setIsAuth, datosAPI, productosFiltrados, productosFiltradosAPI, busqueda, setBusqueda, busquedaAPI, setBusquedaAPI, cantTotal, handleFinalizarCompra, categoria, setCategoria}} >
     {children}
 
     </CartContext.Provider>
