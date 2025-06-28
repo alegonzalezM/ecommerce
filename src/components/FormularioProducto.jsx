@@ -27,31 +27,25 @@ const FormularioProducto= ({ onAgregar }) => {
     }
     return(
         <>
-    <div className='container-formularioProd '>
-   <form onSubmit={handleSubmit} className='form-control m-3 p-3 text-secondary border border-2' >
+    <div className='container-formularioProd m-3 p-3 text-secondary border border-2'>
+   <form onSubmit={handleSubmit} className='form-control ' >
    <h2 id="formularioProd-title">Agregar nuevo producto </h2>
     <div className='m-2 text-start'>
-      <label className='tx-form'>Nombre: </label>
-      <input type='text' className='rounded-1' name='name' value={producto.name} onChange={handleChange} required />
+      <label className='tx-form' htmlFor='name'>Nombre: </label>
+      <input type='text' className='rounded-1' name='name' id='name' value={producto.name} onChange={handleChange} required />
          {errores.name  && <p className="text-danger">{errores.name }</p> }
     </div>
     <div className='m-2 text-start'>
-       <label className='tx-form'>Precio:</label>
-       <input type='number' className='rounded-1' name='price' value={producto.price} onChange={handleChange} required min='0' />
+       <label className='tx-form' htmlFor='price'>Precio:</label>
+       <input type='number' className='rounded-1' name='price' id='price' value={producto.price} onChange={handleChange} required min='0' />
           {errores.price  && <p className="text-danger">{errores.price }</p> }
     </div>
     <div className='m-2 text-start'>
-        <label className='tx-form '>Descripción: </label>
-        <input type='text' className='rounded-1' name='description' maxLength={25} value={producto.description} onChange={handleChange} required />
+        <label className='tx-form' htmlFor='description'>Descripción: </label>
+        <input type='text' className='rounded-1' name='description' id='description' maxLength={25} value={producto.description} onChange={handleChange} required />
            {errores.description  && <p className="text-danger">{errores.description}</p> }
      </div>
-     {/* <div className='m-2 text-start'>
-        <label className='tx-form'>Categoría: </label>
-        <input type='text' className='rounded-1' name='avatar' value={producto.avatar} onChange={handleChange} required />
-           {errores.avatar  && <p className="text-danger">{errores.avatar}</p> }
-     </div> */}
      <div className='m-2 text-start w-50'> 
-         {/* <label className='tx-form'>Categoría: </label> */}
   <select className='rounded-1 form-select' name='avatar' value={producto.avatar} onChange={handleChange} required >
     <option value="">Seleccione una categoría</option>
     <option value="Bicicletas">Bicicletas</option>

@@ -21,22 +21,22 @@ function FormularioEdicion({productoSeleccionado, onActualizar}){
         <div className= 'container-edicion'>
        <h2>Editar producto</h2>
        <div className='m-2 text-start d-flex container-edicion-div'>
-        <label>ID: </label><input type='number' className='rounded-1' name='id' value={producto.id || ''} onChange={handleChange} readOnly/>
+        <label htmlFor='id'>ID: </label><input type='number' className='rounded-1' name='id' id='id' value={producto.id || ''} onChange={handleChange} readOnly/> {/*htmlFor reemplaza a for en React*/}
         </div>
         <div className='m-2 text-start d-flex container-edicion-div'>
-        <label>Nombre: </label><input type='text' className='rounded-1' name='name' value={producto.name || ''} onChange={handleChange} required/> 
+        <label htmlFor='name'>Nombre: </label><input type='text' className='rounded-1' name='name' id='name' value={producto.name || ''} onChange={handleChange} required/> 
        </div>
        <div className='m-2 text-start d-flex container-edicion-div'>
-        <label>Precio: </label><input type='number' className='rounded-1' name='price' value={producto.price || ''} onChange={handleChange} required />
+        <label htmlFor='price'>Precio: </label><input type='number' className='rounded-1' name='price' id='price' value={producto.price || ''} onChange={handleChange} required />
         </div>
          <div className='m-2 text-start d-flex container-edicion-div'>
-        <label>Imagen: </label><input type='text' className='rounded-1' name='image' value={producto.image || ''} onChange={handleChange} required />
+        <label htmlFor='image'>Imagen: </label><input type='text' className='rounded-1' name='image' id='image' value={producto.image || ''} onChange={handleChange} required />
        </div>
         <div className='m-2 text-start d-flex container-edicion-div' >
-        <label>Categoría: </label><input type='text' className='rounded-1' name='avatar' value={producto.avatar || ''} onChange={handleChange} required />
+        <label htmlFor='avatar'>Categoría: </label><input type='text' className='rounded-1' name='avatar' id='avatar' value={producto.avatar || ''} onChange={handleChange} required />
         </div>
          <div className='m-2 text-start d-flex container-edicion-div' >
-        <label>Descripción: </label><input type='text' className='rounded-1' maxLength={55} name='description' value={producto.description || ''} onChange={handleChange} required />
+        <label htmlFor='description'>Descripción: </label><input type='text' id='description' className='rounded-1' maxLength={55} name='description' value={producto.description || ''} onChange={handleChange} required />
         </div>
         <button type='submit' className='btn-submit-forms'>Actualizar producto</button>
         </div>

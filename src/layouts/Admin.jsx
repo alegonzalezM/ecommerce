@@ -46,7 +46,7 @@ const Admin= () => {
             </ul>
             </nav>
         <h1 className='title-admin'>Panel administrativo</h1>  
-        <ul className='list d-flex' style={{justifyContent:'center'}}>
+        <ul className='list d-flex' id='list-admin' style={{justifyContent:'center', padding:'.5rem'}}>
                { productos.map((product) => (
                   <li key={product.id} className='listItem'>
                     <div className= 'listItemImage'><img src={product.image}  alt={product.name} style={{ margin:'auto', width:'5em' }}/></div>

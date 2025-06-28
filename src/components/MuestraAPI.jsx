@@ -2,19 +2,11 @@ import React, { useState, useContext } from "react";
 import { CartContext } from '../context/CartContext';
 import Pagination from 'react-bootstrap/Pagination'
 
-// const MuestraAPI = () => {
-// const { datosAPI} = useContext(CartContext);
-
   const MuestraAPI = ({ dato }) => {
   const [cantidad, setCantidad] = useState(1);
 
  return (
     <>
-      {/* <h2 style={{ width: '100%', textAlign: 'left', margin: '30px 8%', color:'#4caf50' }}>Novedades:</h2> */}
-      {/* <div className="card-news-container" style={{ padding: '0 5%' }}> */}
-
-
-          {/* {dato.map((dato) => ( */}
              <section className='card-news' key={dato.id}>
                 <div>ID: {dato.id}</div>
                 <div className="card-news-id"></div>
@@ -29,10 +21,6 @@ import Pagination from 'react-bootstrap/Pagination'
                 {/* <div className="card-news-stock ">Stock: {dato.stock}</div> */}
         
             </section>
-         
-          
-      {/* </div> */}
-
     </>
   );
 };
