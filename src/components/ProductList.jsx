@@ -5,7 +5,7 @@ import { CartContext } from "../context/CartContext";
 const ProductList = () => {
   const { productosFiltrados, busqueda, setBusqueda } = useContext(CartContext);
   const bicicletas = productosFiltrados.filter(p =>
-    p.categoria && p.categoria.toLowerCase() === "bicicletas"
+     p.categoria && p.categoria.toLowerCase().startsWith("bicicletas-")
   );
 
   return (
@@ -33,14 +33,21 @@ const ProductList = () => {
 
 
         {bicicletas.length > 0 ? (
+          
           bicicletas.map((producto) => (
             <Product key={producto.id} producto={producto} />
+            
           ))
         ) : (
+          
           <p style={{ fontSize: '1.8rem' }}>
+            
             No hay productos que coincidan con la búsqueda.
           </p>
-        )}
+          
+        )
+        }
+        
       </div>
     </>
   );

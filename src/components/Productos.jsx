@@ -40,10 +40,11 @@ const handleClick = (producto) => {
       <div className="col-3  div-product-btn w-100">
     
       <button className='product-btn m-1 w-75' onClick={() => handleAddCart({ ...producto, cantidad })}>Agregar al carrito</button>
-
       </div> 
-      <Link to={`productos/${producto.id}`} className="link-productos">Ver mas</Link>
-  
+      {/* <Link to={`productos/${producto.id}`} className="link-productos">Ver mas</Link> */}
+     {producto.mostrarLink === true && ( <Link to={`/productos/${producto.id}`} className="link-productos">
+    Ver más </Link>
+   )}
       <div className='cant-container'>
         <button className="qtyButton" onClick={(decrease)}>-</button>
         <span>{cantidad}</span>

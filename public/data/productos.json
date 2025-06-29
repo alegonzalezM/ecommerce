@@ -2,114 +2,132 @@
     { 
     "id": 1,
     "name": "Raleigh Mojave 2.0 negro/azul",
-    "categoria": "bicicletas",
+    "categoria": "bicicletas-MTB",
     "price": 496000,
     "imagen":  "/images/bicicletas/BIN2.0-29-negro-azul.jpg" ,
     "otrasImagenes" : [[  2, "/images/bicicletas/BIN2.0-29-negro-azul-2.jpg"] , [3, "/images/bicicletas/BIN2.0-29-negro-azul-3.jpg"] , [4, "/images/bicicletas/BIN2.0-29-negro-azul-4.jpg"]] ,
     "stock": 20,
-    "descripcion": [" Cuadro: Aluminio 6061 / Performance geometry", "Talles: S/M/L/XL (15/17/19/21)", "Horquilla: Raleigh con regulación y bloqueo", "Plato: Shimano FC-TY501 42x34x24", "Manillar: Raleigh MTB-AL-312BT / 720mm / black / 12mm rise", "Potencia: Raleigh / 10° / 31.8 / Black", "Caja: Shimano BB-UN-100 Cartridge Type", "Shifters: Shimano ST-EF 65 L / 7R EZ-fire plus", "Frenos: C-Star mech. Disc 160F/160R Rotor","Piñón: Shimano MF-TZ 21-7 / 14-28T", "Descarrilador Delantero: Shimano FD-TY500-TS6 / 31.8mm", "Descarrilador Trasero: Shimano Tourney RD-TY300 21 Speed", "Maza delantera: Aluminio RLHG FQR disc", "Maza trasera: Aluminio RLHG RQR disc", "Pedales: Aluminio", "Rueda: Raleigh Aluminum Double Wall / black", "Cubierta: CST/RALEIGH según partida", "Tija Sillín: Raleigh 27.2mm / 350mm / Black", "Sillín: Raleigh","Peso: 14.5 kilos", "Peso máximo del ciclista: 110 kilos." ] 
+    "descripcion": [" Cuadro: Aluminio 6061 / Performance geometry", "Talles: S/M/L/XL (15/17/19/21)", "Horquilla: Raleigh con regulación y bloqueo", "Plato: Shimano FC-TY501 42x34x24", "Manillar: Raleigh MTB-AL-312BT / 720mm / black / 12mm rise", "Potencia: Raleigh / 10° / 31.8 / Black", "Caja: Shimano BB-UN-100 Cartridge Type", "Shifters: Shimano ST-EF 65 L / 7R EZ-fire plus", "Frenos: C-Star mech. Disc 160F/160R Rotor","Piñón: Shimano MF-TZ 21-7 / 14-28T", "Descarrilador Delantero: Shimano FD-TY500-TS6 / 31.8mm", "Descarrilador Trasero: Shimano Tourney RD-TY300 21 Speed", "Maza delantera: Aluminio RLHG FQR disc", "Maza trasera: Aluminio RLHG RQR disc", "Pedales: Aluminio", "Rueda: Raleigh Aluminum Double Wall / black", "Cubierta: CST/RALEIGH según partida", "Tija Sillín: Raleigh 27.2mm / 350mm / Black", "Sillín: Raleigh","Peso: 14.5 kilos", "Peso máximo del ciclista: 110 kilos." ] ,
+    "mostrarParrafo": true
   },
+  
   {
     "id": 2,
     "name": "Raleigh Mojave 2.0 negro/gris",
-    "categoria": "bicicletas",
+    "categoria": "bicicletas-MTB",
     "price": 496000,
     "imagen": "/images/bicicletas/BIN2.0-29-negro-gris.jpg",
     "otrasImagenes" : [[  2, "/images/bicicletas/BIN2.0-29-negro-gris-2.jpg"] , [3, "/images/bicicletas/BIN2.0-29-negro-gris-3.jpg"] , [4, "/images/bicicletas/BIN2.0-29-negro-gris-4.jpg"]] ,
     "stock": 15,
-    "descripcion":[  " Cuadro: Aluminio 6061 / Performance geometry", "Talles: S/M/L/XL (15/17/19/21)", "Horquilla: Raleigh con regulación y bloqueo", "Plato: Shimano FC-TY501 42x34x24", "Manillar: Raleigh MTB-AL-312BT / 720mm / black / 12mm rise", "Potencia: Raleigh / 10° / 31.8 / Black", "Caja: Shimano BB-UN-100 Cartridge Type", "Shifters: Shimano ST-EF 65 L / 7R EZ-fire plus", "Frenos: C-Star mech. Disc 160F/160R Rotor","Piñón: Shimano MF-TZ 21-7 / 14-28T", "Descarrilador Delantero: Shimano FD-TY500-TS6 / 31.8mm", "Descarrilador Trasero: Shimano Tourney RD-TY300 21 Speed", "Maza delantera: Aluminio RLHG FQR disc", "Maza trasera: Aluminio RLHG RQR disc", "Pedales: Aluminio", "Rueda: Raleigh Aluminum Double Wall / black", "Cubierta: CST/RALEIGH según partida", "Tija Sillín: Raleigh 27.2mm / 350mm / Black", "Sillín: Raleigh","Peso: 14.5 kilos", "Peso máximo del ciclista: 110 kilos." ] 
+    "descripcion":[  " Cuadro: Aluminio 6061 / Performance geometry", "Talles: S/M/L/XL (15/17/19/21)", "Horquilla: Raleigh con regulación y bloqueo", "Plato: Shimano FC-TY501 42x34x24", "Manillar: Raleigh MTB-AL-312BT / 720mm / black / 12mm rise", "Potencia: Raleigh / 10° / 31.8 / Black", "Caja: Shimano BB-UN-100 Cartridge Type", "Shifters: Shimano ST-EF 65 L / 7R EZ-fire plus", "Frenos: C-Star mech. Disc 160F/160R Rotor","Piñón: Shimano MF-TZ 21-7 / 14-28T", "Descarrilador Delantero: Shimano FD-TY500-TS6 / 31.8mm", "Descarrilador Trasero: Shimano Tourney RD-TY300 21 Speed", "Maza delantera: Aluminio RLHG FQR disc", "Maza trasera: Aluminio RLHG RQR disc", "Pedales: Aluminio", "Rueda: Raleigh Aluminum Double Wall / black", "Cubierta: CST/RALEIGH según partida", "Tija Sillín: Raleigh 27.2mm / 350mm / Black", "Sillín: Raleigh","Peso: 14.5 kilos", "Peso máximo del ciclista: 110 kilos." ] ,
+    "mostrarParrafo": true, 
+    "mostrarLink": true
+
     },
     {
     "id": 3,
     "name": "Raleigh Mojave 2.0 negro/rojo",
-    "categoria": "bicicletas",
+    "categoria": "bicicletas-MTB",
     "price": 496000,
     "imagen": "/images/bicicletas/BIN2.0-29-negro-rojo.jpg",
     "otrasImagenes" : [[  2, "/images/bicicletas/BIN2.0-29-negro-rojo-2.jpg"] , [3, "/images/bicicletas/BIN2.0-29-negro-rojo-3.jpg"] ] ,
     "stock": 11,
-    "descripcion": [ " Cuadro: Aluminio 6061 / Performance geometry", "Talles: S/M/L/XL (15/17/19/21)", "Horquilla: Raleigh con regulación y bloqueo", "Plato: Shimano FC-TY501 42x34x24", "Manillar: Raleigh MTB-AL-312BT / 720mm / black / 12mm rise", "Potencia: Raleigh / 10° / 31.8 / Black", "Caja: Shimano BB-UN-100 Cartridge Type", "Shifters: Shimano ST-EF 65 L / 7R EZ-fire plus", "Frenos: C-Star mech. Disc 160F/160R Rotor","Piñón: Shimano MF-TZ 21-7 / 14-28T", "Descarrilador Delantero: Shimano FD-TY500-TS6 / 31.8mm", "Descarrilador Trasero: Shimano Tourney RD-TY300 21 Speed", "Maza delantera: Aluminio RLHG FQR disc", "Maza trasera: Aluminio RLHG RQR disc", "Pedales: Aluminio", "Rueda: Raleigh Aluminum Double Wall / black", "Cubierta: CST/RALEIGH según partida", "Tija Sillín: Raleigh 27.2mm / 350mm / Black", "Sillín: Raleigh","Peso: 14.5 kilos", "Peso máximo del ciclista: 110 kilos." ] 
+    "descripcion": [ " Cuadro: Aluminio 6061 / Performance geometry", "Talles: S/M/L/XL (15/17/19/21)", "Horquilla: Raleigh con regulación y bloqueo", "Plato: Shimano FC-TY501 42x34x24", "Manillar: Raleigh MTB-AL-312BT / 720mm / black / 12mm rise", "Potencia: Raleigh / 10° / 31.8 / Black", "Caja: Shimano BB-UN-100 Cartridge Type", "Shifters: Shimano ST-EF 65 L / 7R EZ-fire plus", "Frenos: C-Star mech. Disc 160F/160R Rotor","Piñón: Shimano MF-TZ 21-7 / 14-28T", "Descarrilador Delantero: Shimano FD-TY500-TS6 / 31.8mm", "Descarrilador Trasero: Shimano Tourney RD-TY300 21 Speed", "Maza delantera: Aluminio RLHG FQR disc", "Maza trasera: Aluminio RLHG RQR disc", "Pedales: Aluminio", "Rueda: Raleigh Aluminum Double Wall / black", "Cubierta: CST/RALEIGH según partida", "Tija Sillín: Raleigh 27.2mm / 350mm / Black", "Sillín: Raleigh","Peso: 14.5 kilos", "Peso máximo del ciclista: 110 kilos." ],
+     "mostrarParrafo": true,
+     "mostrarLink": true
     },
     {
     "id": 4,
     "name": "Raleigh Mojave 2.0 dama negro/rosa",
-    "categoria": "bicicletas",
+    "categoria": "bicicletas-MTB",
     "price": 510000,
     "imagen": "/images/bicicletas/BIN2.0D-29-negro-rosa.jpg",
     "stock": 11,
-    "descripcion":  [ " Cuadro: Aluminio 6061 / Performance geometry", "Talles: S/M (15.5/16.5)", "Horquilla: Raleigh con regulación y bloqueo", "Plato: Shimano FC-TY501 42x34x24", "Manillar: Raleigh MTB-AL-312BT / 720mm / black / 12mm rise", "Potencia: Raleigh / 10° / 31.8 / Black", "Caja: Shimano BB-UN-100 Cartridge Type", "Shifters: Shimano ST-EF 65 L / 7R EZ-fire plus", "Frenos: C-Star mech. Disc 160F/160R Rotor","Piñón: Shimano MF-TZ 21-7 / 14-28T", "Descarrilador Delantero: Shimano FD-TY500-TS6 / 31.8mm", "Descarrilador Trasero: Shimano Tourney RD-TY300 21 Speed", "Maza delantera: Aluminio RLHG FQR disc", "Maza trasera: Aluminio RLHG RQR disc", "Pedales: Aluminio", "Rueda: Raleigh Aluminum Double Wall / black", "Cubierta: CST/RALEIGH según partida", "Tija Sillín: Raleigh 27.2mm / 350mm / Black", "Sillín: Raleigh","Peso: 14.5 kilos", "Peso máximo del ciclista: 110 kilos." ] 
+    "descripcion":  [ " Cuadro: Aluminio 6061 / Performance geometry", "Talles: S/M (15.5/16.5)", "Horquilla: Raleigh con regulación y bloqueo", "Plato: Shimano FC-TY501 42x34x24", "Manillar: Raleigh MTB-AL-312BT / 720mm / black / 12mm rise", "Potencia: Raleigh / 10° / 31.8 / Black", "Caja: Shimano BB-UN-100 Cartridge Type", "Shifters: Shimano ST-EF 65 L / 7R EZ-fire plus", "Frenos: C-Star mech. Disc 160F/160R Rotor","Piñón: Shimano MF-TZ 21-7 / 14-28T", "Descarrilador Delantero: Shimano FD-TY500-TS6 / 31.8mm", "Descarrilador Trasero: Shimano Tourney RD-TY300 21 Speed", "Maza delantera: Aluminio RLHG FQR disc", "Maza trasera: Aluminio RLHG RQR disc", "Pedales: Aluminio", "Rueda: Raleigh Aluminum Double Wall / black", "Cubierta: CST/RALEIGH según partida", "Tija Sillín: Raleigh 27.2mm / 350mm / Black", "Sillín: Raleigh","Peso: 14.5 kilos", "Peso máximo del ciclista: 110 kilos." ] ,
+     "mostrarParrafo": true,
+     "mostrarLink": true
     },
     {
     "id": 5,
     "name": "Raleigh Mojave 2.0 dama negro/verde",
-    "categoria": "bicicletas",
+    "categoria": "bicicletas-MTB",
     "price": 510000,
     "imagen": "/images/bicicletas/BIN2.0D-29-negro-verde.jpg",
     "stock": 17,
-    "descripcion": [ " Cuadro: Aluminio 6061 / Performance geometry", "Talles: S/M (15.5/16.5)", "Horquilla: Raleigh con regulación y bloqueo", "Plato: Shimano FC-TY501 42x34x24", "Manillar: Raleigh MTB-AL-312BT / 720mm / black / 12mm rise", "Potencia: Raleigh / 10° / 31.8 / Black", "Caja: Shimano BB-UN-100 Cartridge Type", "Shifters: Shimano ST-EF 65 L / 7R EZ-fire plus", "Frenos: C-Star mech. Disc 160F/160R Rotor","Piñón: Shimano MF-TZ 21-7 / 14-28T", "Descarrilador Delantero: Shimano FD-TY500-TS6 / 31.8mm", "Descarrilador Trasero: Shimano Tourney RD-TY300 21 Speed", "Maza delantera: Aluminio RLHG FQR disc", "Maza trasera: Aluminio RLHG RQR disc", "Pedales: Aluminio", "Rueda: Raleigh Aluminum Double Wall / black", "Cubierta: CST/RALEIGH según partida", "Tija Sillín: Raleigh 27.2mm / 350mm / Black", "Sillín: Raleigh","Peso: 14.5 kilos", "Peso máximo del ciclista: 110 kilos." ] 
+    "descripcion": [ " Cuadro: Aluminio 6061 / Performance geometry", "Talles: S/M (15.5/16.5)", "Horquilla: Raleigh con regulación y bloqueo", "Plato: Shimano FC-TY501 42x34x24", "Manillar: Raleigh MTB-AL-312BT / 720mm / black / 12mm rise", "Potencia: Raleigh / 10° / 31.8 / Black", "Caja: Shimano BB-UN-100 Cartridge Type", "Shifters: Shimano ST-EF 65 L / 7R EZ-fire plus", "Frenos: C-Star mech. Disc 160F/160R Rotor","Piñón: Shimano MF-TZ 21-7 / 14-28T", "Descarrilador Delantero: Shimano FD-TY500-TS6 / 31.8mm", "Descarrilador Trasero: Shimano Tourney RD-TY300 21 Speed", "Maza delantera: Aluminio RLHG FQR disc", "Maza trasera: Aluminio RLHG RQR disc", "Pedales: Aluminio", "Rueda: Raleigh Aluminum Double Wall / black", "Cubierta: CST/RALEIGH según partida", "Tija Sillín: Raleigh 27.2mm / 350mm / Black", "Sillín: Raleigh","Peso: 14.5 kilos", "Peso máximo del ciclista: 110 kilos." ] ,
+     "mostrarParrafo": true,
+     "mostrarLink": false
     },
     {
     "id": 6,
     "name": "Raleigh Mojave 2.0 dama blanco/rosa",
-    "categoria": "bicicletas",
+    "categoria": "bicicletas-MTB",
     "price": 510000,
     "imagen": "/images/bicicletas/BIN2.0D-29-blanco-rosa.jpg",
     "stock": 20,
-    "descripcion":  [ " Cuadro: Aluminio 6061 / Performance geometry", "Talles: S/M (15.5/16.5)", "Horquilla: Raleigh con regulación y bloqueo", "Plato: Shimano FC-TY501 42x34x24", "Manillar: Raleigh MTB-AL-312BT / 720mm / black / 12mm rise", "Potencia: Raleigh / 10° / 31.8 / Black", "Caja: Shimano BB-UN-100 Cartridge Type", "Shifters: Shimano ST-EF 65 L / 7R EZ-fire plus", "Frenos: C-Star mech. Disc 160F/160R Rotor","Piñón: Shimano MF-TZ 21-7 / 14-28T", "Descarrilador Delantero: Shimano FD-TY500-TS6 / 31.8mm", "Descarrilador Trasero: Shimano Tourney RD-TY300 21 Speed", "Maza delantera: Aluminio RLHG FQR disc", "Maza trasera: Aluminio RLHG RQR disc", "Pedales: Aluminio", "Rueda: Raleigh Aluminum Double Wall / black", "Cubierta: CST/RALEIGH según partida", "Tija Sillín: Raleigh 27.2mm / 350mm / Black", "Sillín: Raleigh","Peso: 14.5 kilos", "Peso máximo del ciclista: 110 kilos." ] 
+    "descripcion":  [ " Cuadro: Aluminio 6061 / Performance geometry", "Talles: S/M (15.5/16.5)", "Horquilla: Raleigh con regulación y bloqueo", "Plato: Shimano FC-TY501 42x34x24", "Manillar: Raleigh MTB-AL-312BT / 720mm / black / 12mm rise", "Potencia: Raleigh / 10° / 31.8 / Black", "Caja: Shimano BB-UN-100 Cartridge Type", "Shifters: Shimano ST-EF 65 L / 7R EZ-fire plus", "Frenos: C-Star mech. Disc 160F/160R Rotor","Piñón: Shimano MF-TZ 21-7 / 14-28T", "Descarrilador Delantero: Shimano FD-TY500-TS6 / 31.8mm", "Descarrilador Trasero: Shimano Tourney RD-TY300 21 Speed", "Maza delantera: Aluminio RLHG FQR disc", "Maza trasera: Aluminio RLHG RQR disc", "Pedales: Aluminio", "Rueda: Raleigh Aluminum Double Wall / black", "Cubierta: CST/RALEIGH según partida", "Tija Sillín: Raleigh 27.2mm / 350mm / Black", "Sillín: Raleigh","Peso: 14.5 kilos", "Peso máximo del ciclista: 110 kilos." ] ,
+     "mostrarParrafo": true
     },
     {
     "id": 7,
     "name": "Raleigh Mojave 4.5 rojo/gris",
-    "categoria": "bicicletas",
+    "categoria": "bicicletas-MTB",
     "price": 550000,
     "imagen": "/images/bicicletas/BIN4.5-29-rojo-gris.jpg",
     "stock": 13,
-    "descripcion": ["Cuadro: ALUMINIO","HORQUILLA SUNTOUR XCT","Transmisión: SHIMANO","CAMBIO SHIMANO ALTUS RD-M310 – 7/8V","DESCARRILADOR SHIMANO FD-TX50 APTO 42D","MANIJA INTEGRADA SHIMANO ST-M310-L-2 – 3V","MANIJA INTEGRADA SHIMANO ST-M310-L-1 – 8V","PIÑON SHIMANO CS-HG200 – 8V – 12/32 A CASSETTE", "PLATO Y PALANCA SHIMANO FC-TY301 – S/CUBRECADENA – 42/34/24 – 175mm", "CAJA PEDALERA SHIMANO BB-UN100 – 122.5mm – C/TORNILLOS", "CADENA SHIMANO HG-40 – 7/8V" ,"FRENOS: SHIMANO", "DISCO DE FRENO SHIMANO C/CENTER LOCK 160mm SM-RT10" ,"CALIPER DELANTERO SHIMANO BR-M375 PARA DISCO DE 160mm", "CALIPER TRASERO SHIMANO BR-M375 PARA DISCO DE 160mm"]
+    "descripcion": ["Cuadro: ALUMINIO","HORQUILLA SUNTOUR XCT","Transmisión: SHIMANO","CAMBIO SHIMANO ALTUS RD-M310 – 7/8V","DESCARRILADOR SHIMANO FD-TX50 APTO 42D","MANIJA INTEGRADA SHIMANO ST-M310-L-2 – 3V","MANIJA INTEGRADA SHIMANO ST-M310-L-1 – 8V","PIÑON SHIMANO CS-HG200 – 8V – 12/32 A CASSETTE", "PLATO Y PALANCA SHIMANO FC-TY301 – S/CUBRECADENA – 42/34/24 – 175mm", "CAJA PEDALERA SHIMANO BB-UN100 – 122.5mm – C/TORNILLOS", "CADENA SHIMANO HG-40 – 7/8V" ,"FRENOS: SHIMANO", "DISCO DE FRENO SHIMANO C/CENTER LOCK 160mm SM-RT10" ,"CALIPER DELANTERO SHIMANO BR-M375 PARA DISCO DE 160mm", "CALIPER TRASERO SHIMANO BR-M375 PARA DISCO DE 160mm"],
+     "mostrarParrafo": true
     },
     {
     "id": 8,
     "name": "Raleigh Mojave 4.5 negro/amarillo",
-    "categoria": "bicicletas",
+    "categoria": "bicicletas-MTB",
     "price": 550000,
     "imagen": "/images/bicicletas/BIN4.5-29-negro-amarillo.jpg",
     "stock": 5,
-    "descripcion": ["Cuadro: ALUMINIO","HORQUILLA SUNTOUR XCT","Transmisión: SHIMANO","CAMBIO SHIMANO ALTUS RD-M310 – 7/8V","DESCARRILADOR SHIMANO FD-TX50 APTO 42D","MANIJA INTEGRADA SHIMANO ST-M310-L-2 – 3V","MANIJA INTEGRADA SHIMANO ST-M310-L-1 – 8V","PIÑON SHIMANO CS-HG200 – 8V – 12/32 A CASSETTE", "PLATO Y PALANCA SHIMANO FC-TY301 – S/CUBRECADENA – 42/34/24 – 175mm", "CAJA PEDALERA SHIMANO BB-UN100 – 122.5mm – C/TORNILLOS", "CADENA SHIMANO HG-40 – 7/8V" ,"FRENOS: SHIMANO", "DISCO DE FRENO SHIMANO C/CENTER LOCK 160mm SM-RT10" ,"CALIPER DELANTERO SHIMANO BR-M375 PARA DISCO DE 160mm", "CALIPER TRASERO SHIMANO BR-M375 PARA DISCO DE 160mm"]
+    "descripcion": ["Cuadro: ALUMINIO","HORQUILLA SUNTOUR XCT","Transmisión: SHIMANO","CAMBIO SHIMANO ALTUS RD-M310 – 7/8V","DESCARRILADOR SHIMANO FD-TX50 APTO 42D","MANIJA INTEGRADA SHIMANO ST-M310-L-2 – 3V","MANIJA INTEGRADA SHIMANO ST-M310-L-1 – 8V","PIÑON SHIMANO CS-HG200 – 8V – 12/32 A CASSETTE", "PLATO Y PALANCA SHIMANO FC-TY301 – S/CUBRECADENA – 42/34/24 – 175mm", "CAJA PEDALERA SHIMANO BB-UN100 – 122.5mm – C/TORNILLOS", "CADENA SHIMANO HG-40 – 7/8V" ,"FRENOS: SHIMANO", "DISCO DE FRENO SHIMANO C/CENTER LOCK 160mm SM-RT10" ,"CALIPER DELANTERO SHIMANO BR-M375 PARA DISCO DE 160mm", "CALIPER TRASERO SHIMANO BR-M375 PARA DISCO DE 160mm"],
+     "mostrarParrafo": true
     },
     {
     "id": 9,
     "name": "Raleigh Mojave 4.0 azul/blanco",
-    "categoria": "bicicletas",
+    "categoria": "bicicletas-MTB",
     "price": 680000,
     "imagen": "/images/bicicletas/BIN4.0-29-azul-blanco.jpg",
     "stock": 7,
-    "descripcion": ["Cuadro: ALUMINIO","Horquilla: c/SUSPENSION", "Transmisión: SHIMANO CUES O ALTUS", "CAMBIO SHIMANO CUES/ALTUS RD-M2000SGS – 9V", "DESCARRILADOR SHIMANO CUES/ALTUS FD-M371 – DOBLE TIRO", "SHIFTER SHIMANO CUES/ALTUS ST-M2010", "PIÑON SHIMANO CS-HG200", "PLATO Y PALANCA 38-24 - 170mm – SUNTOUR", "CAJA PEDALERA SHIMANO", "CADENA SHIMANO CUES/ALTUS– HG-53 – 9V", "Frenos: LOGAN/FAST", "DISCO DE FRENO SHIMANO C/CENTER LOCK 160mm SM-RT10", "FRENO HIDRAULICO ENSAMBLADO SHIMANO MT-200 – DELANTERO","FRENO HIDRAULICO ENSAMBLADO SHIMANO MT-200 – TRASERO", "Talles: 15, 17, 19 y 21 "]
+    "descripcion": ["Cuadro: ALUMINIO","Horquilla: c/SUSPENSION", "Transmisión: SHIMANO CUES O ALTUS", "CAMBIO SHIMANO CUES/ALTUS RD-M2000SGS – 9V", "DESCARRILADOR SHIMANO CUES/ALTUS FD-M371 – DOBLE TIRO", "SHIFTER SHIMANO CUES/ALTUS ST-M2010", "PIÑON SHIMANO CS-HG200", "PLATO Y PALANCA 38-24 - 170mm – SUNTOUR", "CAJA PEDALERA SHIMANO", "CADENA SHIMANO CUES/ALTUS– HG-53 – 9V", "Frenos: LOGAN/FAST", "DISCO DE FRENO SHIMANO C/CENTER LOCK 160mm SM-RT10", "FRENO HIDRAULICO ENSAMBLADO SHIMANO MT-200 – DELANTERO","FRENO HIDRAULICO ENSAMBLADO SHIMANO MT-200 – TRASERO", "Talles: 15, 17, 19 y 21 "],
+     "mostrarParrafo": true
     },
        {
     "id": 10,
     "name": "Raleigh Mojave 4.0 negro/gris",
-    "categoria": "bicicletas",
+    "categoria": "bicicletas-MTB",
     "price": 690000,
     "imagen": "/images/bicicletas/BIN4.0-29-negro-gris.jpg",
     "stock": 12,
-    "descripcion": ["Cuadro: ALUMINIO","Horquilla: c/SUSPENSION", "Transmisión: SHIMANO CUES O ALTUS", "CAMBIO SHIMANO CUES/ALTUS RD-M2000SGS – 9V", "DESCARRILADOR SHIMANO CUES/ALTUS FD-M371 – DOBLE TIRO", "SHIFTER SHIMANO CUES/ALTUS ST-M2010", "PIÑON SHIMANO CS-HG200", "PLATO Y PALANCA 38-24 - 170mm – SUNTOUR", "CAJA PEDALERA SHIMANO", "CADENA SHIMANO CUES/ALTUS– HG-53 – 9V", "Frenos: LOGAN/FAST", "DISCO DE FRENO SHIMANO C/CENTER LOCK 160mm SM-RT10", "FRENO HIDRAULICO ENSAMBLADO SHIMANO MT-200 – DELANTERO","FRENO HIDRAULICO ENSAMBLADO SHIMANO MT-200 – TRASERO", "Talles: 15, 17, 19 y 21 "]
+    "descripcion": ["Cuadro: ALUMINIO","Horquilla: c/SUSPENSION", "Transmisión: SHIMANO CUES O ALTUS", "CAMBIO SHIMANO CUES/ALTUS RD-M2000SGS – 9V", "DESCARRILADOR SHIMANO CUES/ALTUS FD-M371 – DOBLE TIRO", "SHIFTER SHIMANO CUES/ALTUS ST-M2010", "PIÑON SHIMANO CS-HG200", "PLATO Y PALANCA 38-24 - 170mm – SUNTOUR", "CAJA PEDALERA SHIMANO", "CADENA SHIMANO CUES/ALTUS– HG-53 – 9V", "Frenos: LOGAN/FAST", "DISCO DE FRENO SHIMANO C/CENTER LOCK 160mm SM-RT10", "FRENO HIDRAULICO ENSAMBLADO SHIMANO MT-200 – DELANTERO","FRENO HIDRAULICO ENSAMBLADO SHIMANO MT-200 – TRASERO", "Talles: 15, 17, 19 y 21 "],
+     "mostrarParrafo": true
     },
     {
     "id": 11,
     "name": "Raleigh Mojave 5.5 negro/amarillo",
-    "categoria": "bicicletas",
+    "categoria": "bicicletas-MTB",
     "price": 560000,
     "imagen": "/images/bicicletas/BIN4.5-29-negro-amarillo.jpg",
     "stock": 7,
-    "descripcion": ["Cuadro importado Raleigh Mojave 5.5", "Horquilla Suntour XCM RALEIGH 5.5-MATT BK-YS 8105 GREEN STICKER.", "Suplemento de aluminio para stem aheado de 5mm color negro.", "Camara rodado 29x2.10 valvula americana larga marca Kyowa.", "Cubierta Jiluer banda marron modelo T-Bone 29X2.10 SW 60TPI.", "Par de cintas protectoras para ruedas 29 x 18mm - 2 unidades.", "Rueda completa de aluminio Raleigh 5.5 rodado 29.", "Cambio shimano Deore RD-M5120SGS - 10 velocidades.", "Shifter shimano DEORE SL-M4100 - 10 velocidades.", "Piñón shimano Deore CS-HG500 - 10 velocidades - 11/42.", "Disco de freno shimano con center lock 160mm SM-RT10.", "Freno hidráulico ensamblado marca Shimano BR-355 - delantero y trasero.", "Cadena shimano Deore HG-54 de 10 velocidades.", "Caño para siento de aluminio 27.2 x 400mm marca RALEIGH.", "Forma de aluminio 31.8 x 720mm marca Raleigh.", "Stem ahead Raleigh 31.8 x 80mm.", "Collar con tornillo 34.9mm color negro mate", "Juego de dirección con frente integrado marca Neco", "Pedales MTB rosca 9/16 de aliminio-acero marca Feimin.", "Asiento antiprostático marca Raleigh o DDK dependiendo la partida de fábrica.", "Par de puños Mountain bike marca Raleigh.", "Plato y palanca LTWOO integrado de aluminio 38T x 175mm."]
+    "descripcion": ["Cuadro importado Raleigh Mojave 5.5", "Horquilla Suntour XCM RALEIGH 5.5-MATT BK-YS 8105 GREEN STICKER.", "Suplemento de aluminio para stem aheado de 5mm color negro.", "Camara rodado 29x2.10 valvula americana larga marca Kyowa.", "Cubierta Jiluer banda marron modelo T-Bone 29X2.10 SW 60TPI.", "Par de cintas protectoras para ruedas 29 x 18mm - 2 unidades.", "Rueda completa de aluminio Raleigh 5.5 rodado 29.", "Cambio shimano Deore RD-M5120SGS - 10 velocidades.", "Shifter shimano DEORE SL-M4100 - 10 velocidades.", "Piñón shimano Deore CS-HG500 - 10 velocidades - 11/42.", "Disco de freno shimano con center lock 160mm SM-RT10.", "Freno hidráulico ensamblado marca Shimano BR-355 - delantero y trasero.", "Cadena shimano Deore HG-54 de 10 velocidades.", "Caño para siento de aluminio 27.2 x 400mm marca RALEIGH.", "Forma de aluminio 31.8 x 720mm marca Raleigh.", "Stem ahead Raleigh 31.8 x 80mm.", "Collar con tornillo 34.9mm color negro mate", "Juego de dirección con frente integrado marca Neco", "Pedales MTB rosca 9/16 de aliminio-acero marca Feimin.", "Asiento antiprostático marca Raleigh o DDK dependiendo la partida de fábrica.", "Par de puños Mountain bike marca Raleigh.", "Plato y palanca LTWOO integrado de aluminio 38T x 175mm."],
+     "mostrarParrafo": true
     },
      {
     "id": 12,
     "name": "Raleigh Jazzi rodado 20",
-    "categoria": "bicicletas",
+    "categoria": "bicicletas-infantiles",
     "price": 230000,
     "imagen": "/images/bicicletas/BINJAZZI.jpg",
     "otrasImagenes" :[[ 2, "/images/bicicletas/BINJAZZI-V.jpg"]],
     "stock": 18,
-    "descripcion": ["Cuadro de aluminio", "Horquilla de aluminio", "Frenos V-brake", "Llantas de aluminio 48 rayos", "Canasto y portamuñecas"]
+    "descripcion": ["Cuadro de aluminio", "Horquilla de aluminio", "Frenos V-brake", "Llantas de aluminio 48 rayos", "Canasto y portamuñecas"],
+     "mostrarParrafo": true
     },
     {
     "id": 13,
@@ -117,7 +135,8 @@
     "categoria": "herramientas",
     "price": 17500,
     "imagen": "/images/herramientas/herramienta_multifuncion.jpg",
-    "stock": 13
+    "stock": 13,
+    "mostrarLink": false
     },
      {
     "id": 14,
@@ -125,7 +144,8 @@
     "categoria": "herramientas",
     "price": 17000,
     "imagen": "/images/herramientas/llave_sacapedales.jpg",
-    "stock": 1
+    "stock": 1,
+    "mostrarLink": false
     },
         {
     "id": 15,
@@ -134,7 +154,8 @@
     "price": 9600,
     "imagen": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUTEhMVEhUWFhUWFRgVFRcVFRgWFRUWFhUVFxcYHSggGBolHRYVITElJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFxAQGi0dHR0tLS0rLS0tLSstLS0tLS0tKy0tLS0tLS0tLS0tLS0tLS0tLS0tKy0tLS0tLS0tLS0tK//AABEIAMIBAwMBEQACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABAECAwUGBwj/xABDEAABAwIDBAYHBgMHBQEAAAABAAIDBBESITEFQVFxBiJhgZGxBxMyQqHB0RRSYnKy8COCwhUzY5KTouEkQ3PS8Rb/xAAbAQEAAgMBAQAAAAAAAAAAAAAAAQIDBAUGB//EADURAQACAgEDAwEFBgYDAQAAAAABAgMRBBIhMQVBURMGImFxgTJCkaGxwRQjM1LR8FPh8RX/2gAMAwEAAhEDEQA/APcUBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQWveBqQOaCPJtGMe9flmq9UI2iybabuaTzyTqNo7ttu3ADxKblG1v9sP7PBNybZWbYdvaD8FOzqSItqtOoI+KbTtMina7Qg+fgpSyoCAgICAgICAgICAgICAgICAgICAgICDDUVDWDPwUTKNtVU7ScdDbl9VXZtrZZydTdV1KNsJcrRCJlS6tFUbVBTQqCiFzXIlka5BnY5QtEJ0Fc4anEO3XxUpbGnqWu0yPBSlmQEBBErdpww5yysj/M4D4FRuFq0tbxG2hrPSBQM0kMh/A0n4mwVZyVhs04Oa3s0dT6VYgepAT+Z4HkCqfWhs19LyT5lEf6V3bqdn+of/VR9eGWPSJ+f5EXpZPvUw7pPq1PrfgT6Rb2t/JPpvSpTn24JW9oLXfRT9aGK3pOWPExLoNn9NaGXScMPCQFnxOXxV4yVn3auThZ6eat9HI1wu0hwOhBuPEK7VmJjyvQEBAQEBAQEBBGrKrCLDXyUTKJlpZpCdVWY2qiyJomWBwVohUwqRUIBQUTQvARLKxqJhmaFVZeCgzxKYRKe2ta1pMjg1oGbnEAd5KbWrE27Q5XbXpJporthBndxvhZ46nuCpOWI8N7FwMl/wBrs4bbPpEq5bhrxE3hGLG35jn4ELFOSZdHF6djjz3cjU17nG7nFxOpJuTzJWKZdLHhiI1EIUlSePx/f7ChtVxwxGY9qpNtMsVhRsh4p1wt0rxUFR1wj6USvNUVE5FowwvjqnDeq9a04Ylt9j9J6inN4pHs7Acu9puD3hZaZZjw1c3puLL+1D0LYnpVGTamMH8ceR5lpy8D3LYryPlxs/oN474p/SXebH2/TVIvBK153tvZ45tOYWet628S42fiZsH+pWYbNWawgICAgIMFVUYB2nRETOmnkfc3OqqoxOCnQscwKdIYzEFKVpjQiFvqygqIlG0LxGENKhqhaFyStACoSvYoNFdtCOCJ0srsLG68SdzQN7icgFE20vjxWyWitY8vHekvSiWsku44IwepGDk0cT953E+Fgte2Tqem43Crhj5n3lopagKu23GOUczJ1MkYkdzrqk3Z4ooqTZeBUW0uAULxCoChaIXAKF4quDVG14qyNYomWauNlYxNzLJ0xENlQU9nBwJBGYN7G/ZbTxWWvZrZoi1emY3t7L6PNvOqInRyOxvjtZxzLmHS53kHI3zzF+J6GDJ1RqfZ4b1fgxx8kWpGq2/q65Z3IEBAQEGu2iet3fVRMwpZz8leQ9wyIBsMuGtzzVOo0ubXMI62R32zF+fBTFk6YjXD7p7nA+dlfaNLXbTYNcbebDbxF1KelWOuY72XtJ4XsfAqU6SMxqCOYQZmBVVXFqJWhQmFCoStuoWZIs1XqJh5B086TmpmLGH+DESGWOTnDJ0h56DgOZWtfJEy9Z6ZwIx44vaO8uUc8lYpyOrGJYWqnXK304VATrlP0wsVZst9MwJtPQqGqNp6FQ1RtaKrgEWiq9rFXbLFNsojUSzVouAUeWTWmwpoLC518lmrXTXvfaSDYKzHEblsuiW2vstXHITZhIZJ+RxF3d2vcsuK3TZp+qcP/E8a1Y8x3j9HvAXRfOlUBAQEGp2kbut2Hw0+SrKktdNCxgF7XI7L249gUCNUOa/Xq2HAWtuyOncUiYGuJYcg9h7CS3zup7J2sMdr4Wk/lId8LhR0rQzbNpJZCTGXtLDe7wG2O6xIU6mBWqr6gmxkLyL5AMcOYIHL95GsyvFSCrmaLSOBdv6o38gq9UnTCfT1BezFbD1sOeVz+Ebx2rJWfljmEgHJTKdMbiqTK8QtJVUoO2tpCBrBhL3SHCGg2NrZ+YHeo/BscfF1zM71p51V1DPXFsVJA1gNsBgje4Ftg7O2ZvffZRqPh0K2yTX9uf4rKmnaHY5KFlj7rWvY0Dj1SRdV+nX4Za8nLrpi8sktPQvF2U7b/dE8kb/B5wnxUfSp8FeXyq/voUtDSD24auPtGF48RiUfQoz19Q5XzEq/2Xs93s1M8Z/xIHH4hoVZ49faWSvqvIjzWJWx9HoCSBXwNABN5GvYDwFzldV/w34ssesW/wDG1zdkk+zLA7lKBrzssU4LN6PUsXvEqHY83utD/wDxvY/9JuqzitDNXnYbe6O6nc02e0tPBwINuOax2iY8t3DemSN1na8+CjbarAqTK6TRw36x0GnNZKR7sWS2u0JZcsu2vrso99lK9IRi7/lQ2Ons+guiVb66jgkOZMbQebeqfiF08c7rEvl3qGH6PKyUj2mW3V2mICAg57bM5FiHOGZBwjFnrpY8VWykLqeXEwFzQ+4vmLcd25QSw1MUFs2uYPwuy/yn5J2S1v2SG/UktzHyFk7JWM2aSb4hkd7CCRx1yTS0MVTC/CRjA457uB7FWZlkrVLawMFhYm3WNxn38FRMoL3OfIBbqtyLhqQeFs+y5VohS0/DY+rJkIfa4DQANGgjFhtpcZaKVEslTtbTFZVWZYoSSnlEy5/pU4RSmV9uowMYPxG7nZcbG3eUn7re4tZyR9OPfy4iOqe95eSGG53ABoPLefLmqxMupn6MVYx1SW7UkJJaS0DeND3G6nu1emvwyfb7/wB4GP8AzMHy+qKzWPZYTTnWFn8rnNTsiIt7SyNihysJW7hhmd5Ep2NWn3QNqwx42silMrsJJxOD2B2KxI3Pwi1hmL3JvayiZq2uPiyTXqmNNHtCkbG2wdd2tt/a4lRqGWkRE7bDoh0bnMjZ5C6GMWyIs+Rt72DTo24GZ4d6mK+6nI5ERGo7t905bG6O4Abhe0RjnfG0ccszyWHlRHS2/RJvGbpjxPlxF1ztvXwvijubKYjckzqE8kAdizNXzLF6zdrwVmTo2tdJdSyVrphKrMsuntPolqsdDh3xyvb3Gzx+pb3Ftuj579pMXRzZt/uiJ/t/Z2q2XAEBBa/Q8kGjr4cXiPGxHyCrZSqO6UxQjjlyzufgomE+7Wsqbuz6wPFTpLNPA0NuLZa9oKx+JSxwvviyuTlbxWWfCyPW0TTHexuQ3PdbELi3HXwWGWWGvmgJFsyS7Pdrpa2gWO9t60mIbfZ7ALkZC+nE8fks3tpRIpYzic47zfvKKe6SQiV0cagbqipcIudfJZKxpV5v0+YDPe1wS69xf2bDLgqWiJnu6HDvNa9kQUjbZADW+Q42+KaXyXmLd2CVoaCcrDXq/IKJKW6uyK6JjgXdW3EGw+Khkn7s6W0+xMfWY4EfmG5IjaJy67S1e14LOw4mAG2I423w6kC53/NUtEt3jTTpm8w1klA7Fjc9uThkxwNhoACDoMgscYp3uXQtzafT6aw6D+xopA58pNz1sLDhuQcrk3NhfjfLcs8a04/1bRbs3lK9op4W7yLk6mwJawE66NxcyFeGtefvzMuS6VVmOURjSO4/mNsXhYDuK53Kybtp7L0Xi/Txdcx3s0gWo7afTxWGep/dlmpGmDJbc6UmPbYb1bZXsjSTg6C1vE/RY5v8MlfmVA9K30y9lVO9yl6j6FpurUs4GN3iHD+lb/DntZ4n7V01fFb8Jh6atx5IQEFHDJBpKl1hZ3ceXHgVSVEGSPG3Bv3Hjw/faidI4oXjLDnoM2281KWeehfh4m25VmUwgwvLeIdwsrxK7LISGWcNB5km3MfNYbSvCBDdzrDdmPkfJVr3TLaMZazeFrrKpKaoQAKBsdnU/vHu5q9Y91ZlsVdDy7pE71pv/iTjwfbyAKwzPd08GLUMM4thF83Nv/ucLfBPBevV3RKtpcDc7jokmPtMaaVoIBaZSL+7iPDLIKm2/NbW7xDf7HjLXYdRbj8blZKufltuWk2/TMJIOby9mC+uENk9Z2a4PDmsVvLf402+nuPGmlpKIesZra4DrDOwzPwBTa037N8JA1pxG2K+vDsUxPZhrW157JtVOIoDJbQdUdpya3y8Fa9umm0cbjzyOTWn4uEcbm5Nycye06rkWnc7fQaVitYrHszU0Vzc6K1Klrah0PR/YklXKIost73EdVjb6nyA3rYxY5yTqHJ5/Opw8fXfvM+I+WHph0VqKN/X68RNmSNHVO/C4e67z3dlc+C1J37I9N9Vw8yNR92/x/w5orWdVVpRas92YFTWWZ6R6FnfxakcWRnwc76rf4fm36PIfayPuYp/Gf7PV1vvFiAgIINVEDcEXBVZUny10mz87tdYcDn4H/6o0napYRkSe8XHz8kQjPdID/2nDk5ru+xsVCzPDI4+4O5xPmU2tCyqdfUAN1sMzcdlyqyvCLG4k9WN1uLsipg2lNh3qUL7KCGWmiLjYJEbJbljbCwWVRcg8hL7vdniaZJLEbi55uDwIstf8nfiNUiJ+GHaUwLWjEAW3F+Oel9xvdLJwVnv27S1D/WPyDrjhjHkSsbcrSle8wxP2bK2xcxwHEDEOd23RnrekxMQ6TZuQGYcLagjcstZcDPS3X4QtsRh2AtILg6QOFxlcG1x3qLRts8ebUr0z4lrKD2rHLXuyKpEMmWsfuqU8LpJg292t6zuF2nqg94vbkprG5bUzGHBM+8sXS6sxPbCw3awAu7XuHyH6itblX79MOn6Fxemk5rR3t4aFrc+K1Iju9D7bbvZOy5J5GwxDE93gPvOcdwC2aUm06hz+Xy8fHxzkyeP6vcOjewo6SERR5nV77ZvdvJ7OA3BdKlIpGofO+bzMnKyzkv+kfEJm0aGOeN0UrQ9jxZwPn2Ea3VprFo1LBiy2xXi9J1MPnfpRsZ1JUyQOzwm7HH3mH2Xc9x7QVxs2P6dtPpPp/Mjl4K5Pf3/ADakLG3YZmqnu2K+HovoZd/1E44xD4PH1XS4nmXlPtXH+Vjn8Z/o9cW+8QICAgxysuFEomERwUbUYnItEMbgoWhbZEqEKJWUsgIKKEtrRwYR2nX6LJEaUmdpClCySQDVRMjwjpTA+CqnDDhu95tqC15xC45OGe5c69pradPa8LHj5PGp1x4jSFS7awuBfkQRe/WjdztYhWrmifJfgXrE9M7h1dN9kns71d77mPjd+oDzWeOifDl3jkY/dlOx6XVsc7O0W/oeVPTDH/ic0eZhZ9jgaczVX4iKU/7s/JOmGT6uS0b7fxbT7BQYbuaWtAzxB8Zud5e4DPvU6jTWtfkWnXlxlTtCmjqHYHOLAC0F1pDc7xgytbS6wzkpHu6mPiZ8lIjp7oTtvNZf1EZufflsfCMZDvJ5LDbk67VdPF6ROTU5p7R7Q08srnuLnG5JuTxJ3rUmZtLvYsVaVitfEJmyKJ8sjWMGJ7iGsHFx+guezVZaVm0xEMPLz0w0m9p1Ed5e5dD+jTKOK2TpXgesf/S38I+Oq6uLHFIfOfUvUL8zJvxWPEf993QLI5wg8r9NtEL08w1OON3bo5vhZ3itHm17RL1f2Yyz1ZMf6vLFz3r/AHZmqnu2K+HqvoYo+pUTcXMjH8oLnfqaurxK9pl4n7VZt5MeL4iZ/j/8emLceTEBAQEEeoj3qJVmERyhLHZQspZAIRZSygWlBJ2fBc4ju05q0QiZT3ygalTMqo8lUd2Xmq9S0QjFyqs4f0jbHLg2oaNwY8254D5jwWvnx+7v+icuKW+lafLzKZhaTa4/fktR6+urIT+6/GwB8QqTbSZw1nzDKytmGksg5SOHzU/Ut8sc8TFPmsL3bTnOs0v+o/6pOS3yiOFhj92GCSRzvac535iXearNplmpgpXxEQpZVZtLmqF6srAlWXxG3snoy6NepjFRIOu9v8MH3WHV3N3lbiV1uPi6Y3PmXz7171L6+X6VP2a/zn/07tbLzwgIPL/TbVjDTRbyXyHsAAaPG58Fo82e0Q9T9mMczkyX9taeUtC50vZVjuzBRWNy2PD37oDso01FExws915HDgX5gHtAsO5dvDTppEPl/q/Kjk8u948eI/R0SyuYICAgIMc0lgoka/Cq7DCiQhBSyJhQtPBErcHFRsZ/WkCwyHYmzSxNbSzR0pOuSmKo2kMpmjt5q2ldq1EDXtLHgOa4WIOhCTG+ya2msxaPMPIOm/Q99OS9gL4Scnalp+6/67+euhlwzWdx4ey9L9Vrm1TJOrf1cBO2xN/otO0PSVncbY1VIiVUFQoWhUKFodJ0E2Gauqawg+rZ15TuwjRt+Ljl4nctni4+u/4OX61z44vGnX7Vu0f8/o9/aLCwyC675qqgINftvbENLEZZnhrRoPecdzWjeSq2vFY3LPx+Pkz3imONzL5/6T7afWVD53ZXsGNvfCwey3zJ7SVx82Wcltvo/p3BjiYIxx59/wA2taFhl0q1dV6O9gGqq24heKKz5OBt7DO8/AFbPFxdd9+0ON67z443HmtZ+9ftH95e8LrvnAgICAgII1WDruUSIwUaSqE0CjQrdE7FGja1sZJyCtEJ2zx0nE+CnSu0iOIDQJpC9SCAgtkYCCCAQciCLgjgQiYmYncPDentPRmZ32UFmG+OxBYba4W6gDsNuxc3kVrM9nuPR83JjH/mzuJ8fLj5IyOBG4jePNas107tbdULCx3A+BUaOpcyNx0BPIFNSnrr8t7sfofW1ADo4HYT777Mbz62ZHIFZKcfJbxDR5HrHEwbi1tzHtHdu6f0fyRzxR1Tw0PcBaLrZYrZOcLDLPRZ6cTv95z8nr8Xw3thjvHy9f2RsmCljEcDBG0Zm2pP3nOObj2ldCtIrGoeMz8jJnvN8k7mVtbtymi/vZ4mfme0Hwuk3rHmU4+NmyfsUmf0c9tD0lUEd8L3zHhG02P8zrD4rFbkY493Sw+g8zJ+70/m5Ha/pWnfcU8TYh95/Xd4ZAHxWtfm/wC2Hb432XpHfNff4Q4baO0Zp345pHSO4uOnIaNGW4BaV8lrzuZej43DxceusVdf9+UdrCdM1SImWz2jy6vo30DqalzS5phi3vcLZfhBzJ+C2sXFtbz4cTn+u8fjRMUnqt8R/d7LsPY8VLEIoW4WjU+8473OO8rp0pFI1DwXK5WXk5JyZJ3MtgrtcQEBAQEGOeQNaXHQBBoafaPWJeLtPsgZWVdraSztBgBPqzYdqnaNL4q+E6gt5/8ABTsJ0RYfZwnlYqUFVOGNJ8AoFtDGQ3PU5nvUiQgICAgIND002g6GmODIvOC/AEEnvsLd6xZb9NW96dgjNniJ8R3eBbZmxP5LmXe/49OmrX3WNmZY5njRzh3lNpirYUm3KmMgslII4tY79TSrRltHhiy8LFljVo/m2f8A+62la32p9vyx+eFX/wAVk+Wt/wDh8Le+j+colT0krJCC+plJGhxWtytZUnkZJ92zi9J4tI1FI7sddtqpm/vZ5X9hebeF7Ks5rz5llxem8bFH3McR+jXBqx7bcUiPEMkcRcbNBJ7BdTETPiEXvSkbtOm/2d0KrprYYHNB3uGH9VlmrxslvZzM/rnDw/vb/Lu6zZXoqdcGeVrRwZ1jyubAfFbNOF/ucXkfaj2w1/i7jY3ROkprGOIFw99/Wd3E5DustumGlPEPO8r1Pk8n/Uv2+I7Q3iytAQEBAQEBAQWyRhwIIuDqgjt2dEPd81Gk7VdQxkWw+aaQwybJZuu23emhDdsZzc2kE9nVKaTtJo6E5Ok1G4m/K5TSGyUggICAgIIm1KBk8bo5BdrvEHcR2qtqxaNSyYctsV4vXzDwvpn0TnpXlzml0e57QS23E/d5H4rmZsNqy976d6ni5NIrvVo9nLYVrOv0rg1FoqqGqF4he1tzYZns1Ud58Jma1jczps6HYNTK5rWQyEuNhduEEgXObrDTNZK4b2nw1cvqXGxVmbXjt+rsNneiyofnNIyLkcbvAZf7ltxwpny4Wf7U44/0qzP59nU7M9GNFGQZMc5H3jhb/lb8ys9OJjr57uNyPtFy8sTFdVj8P+XVUOy4IRaKJkf5WgHxWxWla+IcfLyMuWd3tM/nKYrMIgICAgICAgICAgICAgICAgICAgICAgFBy8u0n48TmAgXGEk2VJbFddOonSFWiGQ/xKGnk7epi8bXVJrWfMNnFnzY/wBjLMfqhHZuyAbSUhjJ1sXuA/yOy7gq/Rxf7WxHqXP193LM/wAG0otg7HfbBFATwcTfwcc1aMOL4Yb+o8/3yWb1lPT0zLsjjjaNMDGtv4BZIrWviGnbJly2+/aZ/OUHY0bpZXVDxpcN5nI25DLvKmDJMRHTDfqWAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBBaWDgPBBFqdlwvviYM9bZeSaWi8w103RpnuOt2OAcFGl/rW91kWwHYhiLQ3eG3+AOijpT9VvYYg1oa0WAFgFZhmdr0BAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBB/9k=",
     "stock": 61,
-    "descripcion": ["Luces de silicona delantera/trasera" ]
+    "descripcion": ["Luces de silicona delantera/trasera" ],
+    "mostrarLink": false
     },
         {
     "id": 16,
@@ -142,7 +163,8 @@
     "categoria": "luces",
     "price": 5000,
     "imagen": "/images/luces/luz_delantera.jpg",
-    "stock": 35
+    "stock": 35,
+    "mostrarLink": false
     },
            {
     "id": 17,
@@ -150,7 +172,8 @@
     "categoria": "luces",
     "price": 16000,
     "imagen": "/images/luces/luz-rp.jpg",
-    "stock": 5
+    "stock": 5,
+    "mostrarLink": false
     },
             {
     "id": 18,
@@ -207,5 +230,38 @@
     "price": 18000,
     "imagen": "/images/cadenas/cadena-rlh.jpg",
     "stock": 22
+    },
+      {
+    "id": 25,
+    "name": "Raleigh Lilhon rodado 16",
+    "categoria": "bicicletas-infantiles",
+    "price": 200000,
+    "imagen": "/images/bicicletas/BINLILHON-R.jpg",
+    "otrasImagenes" :[[ 2, "/images/bicicletas/BINLILHON-V.jpg"]],
+    "stock": 8,
+    "descripcion": ["Cuadro de aluminio", "Horquilla de aluminio", "Frenos V-brake", "Llantas de aluminio 48 rayos", "Canasto y portamuñecas"],
+     "mostrarParrafo": true
+    },
+      {
+    "id": 26,
+    "name": "Firebird rodado 20 nena",
+    "categoria": "bicicletas-infantiles",
+    "price": 210000,
+    "imagen": "/images/bicicletas/BIN19075.jpg",
+    "otrasImagenes" :[[ 2, "/images/bicicletas/BIN19075_rosa.jpg"]],
+    "stock": 7,
+    "descripcion": ["Cuadro de acero", "Horquilla de acero", "Frenos V-brake", "Llantas de color 28 rayos", "Canasto y portamuñecas"],
+     "mostrarParrafo": true
+    },
+      {
+    "id": 27,
+    "name": "Firebird rodado 20 nena",
+    "categoria": "bicicletas-infantiles",
+    "price": 190000,
+    "imagen": "/images/bicicletas/BIN19067.jpg",
+    "otrasImagenes" :[[ 2, ""]],
+    "stock": 3,
+    "descripcion": ["Cuadro de acero", "Horquilla de acero", "Frenos V-brake", "Llantas de color 28 rayos"],
+     "mostrarParrafo": true
     }
   ]

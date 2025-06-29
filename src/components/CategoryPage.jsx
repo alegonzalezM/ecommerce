@@ -25,10 +25,11 @@ function CategoryPage() {
        
         {productosCat.length > 0 ? (
          
-          <div className="row"> 
+          <div className="file-category"> 
             {productosCat.map((prod) => (
-              <div key={prod.id} className="col-md-4 mb-3">
+              <div key={prod.id} className="">
               <Productos producto={prod} />
+              
               </div>
               
             ))}

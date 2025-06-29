@@ -22,7 +22,8 @@ const Nav = () => {
          <ul style={{marginBottom:'3px'}}>
            <li className="submenu">Bicicletas
            <ul className="sublista">
-             <li>MTB</li>
+             <li><NavLink to="/categoria/bicicletas-MTB">MTB</NavLink></li>
+             <li><NavLink to="/categoria/bicicletas-infantiles">Infantiles</NavLink></li>
              <li>Urbanas</li>
              <li>Eléctricas</li>
            </ul></li>

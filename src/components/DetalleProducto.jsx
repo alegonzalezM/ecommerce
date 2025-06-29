@@ -1,17 +1,14 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
-import Nav from "./Nav";
 import NotFound from '../components/NotFound'
+import ParrafoTecnico from "./ParrafoTecnico";
+import { NavLink }  from 'react-router-dom';
 
 const DetalleProducto = () => {
-     const { productos }= useContext(CartContext) 
-
+  const { productos }= useContext(CartContext) 
   const { id } = useParams();
-
   const product = productos.find(producto => producto.id==id);
 
  if (!product) {
@@ -20,13 +17,12 @@ const DetalleProducto = () => {
     );
  }
   return (
- <>
-    {/* <Header />
-    <Nav/> */}
+       <>
+    <div style={{ width:'90%', display:'flex', justifyContent:'space-around',padding:'10px', alignItems:'center'}}>
+      <h1 style={{textAlign:'left', margin:'10px', width:'50%'}} id='detalle-title'>Detalle del producto</h1>
+      <span style={{alignItems:'rigth', width:'20%' }}><NavLink to='/' id="link-detalle" style={{color:' #72cb10' }}>Volver al inicio</NavLink></span></div>
     <div className="container-detalleProducto mb-4">
-      <h1 style={{textAlign:'left', margin:'10px'}} id='detalle-title'>Detalle del producto</h1>
-      <div style={{textAlign:'left', margin:'10px', color:' 	#333333 '}}>
-     
+
        <h3>Categoría:<span style={{color:'var(--palette-1'}}> {product.categoria}  </span></h3><br/>
          { product ? <div className='container-detalle-nombre'>{product.name}  <br/><br/>
         <span className='container-detalle-imagenes'>
@@ -43,13 +39,12 @@ const DetalleProducto = () => {
  </ul>
 )}
      <br/>
-     <p className="parrafo-detalleProducto">Algunos componentes pueden variar levemente respecto a la descripción o las imágenes publicadas, en función de disponibilidad o mejoras técnicas, siempre garantizando la misma calidad y rendimiento del producto. Todas nuestras bicicletas se entregan con servicio técnico completo, asegurando su óptimo funcionamiento desde el primer uso. </p>
+     <p className="parrafo-detalleProducto">{product?.mostrarParrafo && <ParrafoTecnico />} </p>
       </div> : <h3>Producto no encontrado</h3>}
       <br/>
     </div>
-
-            {/* <Footer/> */}
-    </div>  
+       {/* <Footer/> */}
+ 
     </>);
       }
 
