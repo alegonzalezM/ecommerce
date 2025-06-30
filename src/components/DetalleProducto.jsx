@@ -39,7 +39,7 @@ const DetalleProducto = () => {
  </ul>
 )}
      <br/>
-     <p className="parrafo-detalleProducto">{product?.mostrarParrafo && <ParrafoTecnico />} </p>
+     <div className="parrafo-detalleProducto">{product?.mostrarParrafo && <ParrafoTecnico />} </div>
       </div> : <h3>Producto no encontrado</h3>}
       <br/>
     </div>

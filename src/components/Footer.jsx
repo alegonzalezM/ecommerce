@@ -8,7 +8,7 @@ const Footer= () =>{
     return(
   <>
     <div className="navFooter">
-      <nav >
+      <nav className="">
         <ul style={{ marginBottom:'.5rem'  }}>
     
           <li><NavLink to='/' className="link">Inicio</NavLink></li>
