@@ -107,8 +107,8 @@ const Nav = () => {
         </SubMenu>
 
         <SubMenu id="repuestos" titulo="Repuestos" menuActivo={menuActivo} toggleSubmenu={toggleSubmenu}>
-          <li><NavLink to="/categoria/cadenas">Cadenas</NavLink></li>
-          <li>Cambios</li>
+          <li><NavLink to="/categoria/cadenas" className='navlink'>Cadenas</NavLink></li>
+          <li><NavLink to="/categoria/cambios" className='navlink'>Cambios</NavLink></li>
           <li>Frenos</li>
           <li>Horquillas</li>
           <li>Manijas</li>

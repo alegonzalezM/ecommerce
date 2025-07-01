@@ -1,27 +1,20 @@
 import React from 'react';
-import { useState } from 'react';
 
-const SubMenu = ({ id, titulo, children }) => {
-  const [menuActivo, setMenuActivo] = useState(null);
-
-  const toggleSubmenu = (id) => {
-    if (window.innerWidth <= 575.98) {
-      setMenuActivo((prev) => (prev === id ? null : id));
-    }
-  };
+const SubMenu = ({ id, titulo, children, menuActivo, toggleSubmenu }) => {
+  const isActivo = menuActivo === id;
 
   return (
-    <div className="submenu">
-      <li className="submenu-header" onClick={() => toggleSubmenu(id)}>
+    <li className="submenu">
+      <div className="submenu-header" onClick={() => toggleSubmenu(id)}>
         {titulo}
-        <span className="plus-sign">{menuActivo === id ? '−' : '+'}</span>
-      </li>
-      <ul className={`sublista ${menuActivo === id ? 'visible' : ''}`}>
+        <span className="plus-sign">{isActivo ? '−' : '+'}</span>
+      </div>
+      <ul className={`sublista ${isActivo ? 'visible' : ''}`}>
         {children}
       </ul>
-    </div>
+    </li>
   );
 };
 
-
 export default SubMenu;
+
