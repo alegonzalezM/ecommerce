@@ -14,7 +14,20 @@ const Home = () => {
     return <p>Esperando contexto...</p>;
   }
 
+<<<<<<< HEAD
   const { carga, error } = context;
+=======
+const Home = () => { const { carga, cargaAPI, datosAPI } = useContext(CartContext);
+ 
+         return(
+            <>
+            <div className="container-fluid">
+            <Header />
+            <h1>Bienvenidos</h1>
+            <p style={{width:'50%', margin: '.5em auto'}}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis in est enim molestiae, ducimus maiores fugit odio magnam blanditiis exercitationem incidunt architecto. Quos repellendus esse sint quod facilis soluta odit!</p>
+            <br/>
+            <Nav />
+>>>>>>> e2c77cbbb5cf96f0e6edf504a888a6e6994bd0dd
 
   if (typeof carga === 'undefined' || carga) {
     return (
@@ -24,6 +37,7 @@ const Home = () => {
     );
   }
 
+<<<<<<< HEAD
   if (error) {
     return (
       <div style={{ textAlign: 'center', margin: '2rem', color: 'red' }}>
@@ -57,4 +71,12 @@ const Home = () => {
   );
 };
 
+=======
+        }
+            <MuestraAPI datosAPI={datosAPI}/>
+            <Footer/>
+        </div>
+     </>    
+        )}
+>>>>>>> e2c77cbbb5cf96f0e6edf504a888a6e6994bd0dd
 export default Home;
