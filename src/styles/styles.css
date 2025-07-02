@@ -169,6 +169,9 @@ margin-left:5px;
   border: 1px solid var(--palette-6);
   border-radius: 4px ;
 }
+li .btn-show-cart{
+align-self: flex-end;
+}
 .nav a, .navFooter a {
   color: var(--palette-6);
   text-decoration: none;
@@ -1147,7 +1150,7 @@ div[class=col-3]{
   margin:auto;
 }
 .col-6>img{
-  width: 30%;
+  width: 50%;
 }
 .swal2-popup {
   width:55%;
@@ -1386,3 +1389,4 @@ nav ul>li:not(:last-child), .link.active {
   overflow: hidden;
 }
 }
+
