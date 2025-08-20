@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/urban-bikes-t.png";
 import Cart from "./Cart";
 import { NavLink } from "react-router-dom";
-import { FaWhatsapp } from "react-icons/fa";
-import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaWhatsapp, FaMapMarkerAlt } from "react-icons/fa";
 import WhatsApp from "./WhatsAppWidget";
 
 const Header = () => {
@@ -43,7 +42,7 @@ const Header = () => {
         </div>
 
         <div className="col-6" id="#logo">
-          <img style={{ width: "11%", paddingLeft: "5px" }} src={logo} />
+          <img src={logo} />
           <h1 className="header-title">
             <NavLink to="/" className="link">
               URBAN

@@ -3,14 +3,23 @@ import loading from '../assets/loading.gif'
 import {toast, Zoom } from 'react-toastify'
 import { useAuth } from '../context/AuthContext'; 
 import { useNavigate } from 'react-router-dom';
-import PaginaConDelay from '../components/PaginaConDelay';
+// import PaginaConDelay from '../components/PaginaConDelay';
 
 export const CartContext= createContext();
-export const CartProvider = ({children}) =>{
+export const CartProvider = ({children}) =>{   //provee las variables, estados, funciones, etc
 
   const { isAuth } = useAuth();
   const navigate = useNavigate(); 
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState(()=>{
+        const savedCart = localStorage.getItem("cart") //guarda lo q hay en localStorage y lo uso en el useEffect
+        try{ const parsed = savedCart ? JSON.parse(savedCart) : []
+    return Array.isArray(parsed) ? parsed : []    //op ternario, si hay algo en el carrito lo parsea, sino array vacío
+  } catch (e) {                                  //Array.isArray me asegura que siempre sea 1 array y no de error
+    return [] // si falla el parseo}
+  }
+  });
+
+
   const [productos, setProductos] = useState([])
   const [carga, setCarga]= useState(true)
   const [cargaAPI, setCargaAPI]= useState(true)
@@ -43,6 +52,7 @@ fetch("https://6814cc8c225ff1af162a23f1.mockapi.io/bicycles")
       setError("Hubo un inconveniente en la carga de datos");
       setCargaAPI(false);
     });
+     localStorage.setItem("cart" , JSON.stringify(cart))
 }, []);
 
      
@@ -122,13 +132,9 @@ setCart(prevCart => [...prevCart, { ...product, cantidad: product.cantidad }]);
   };
   
   const handleFinalizarCompra = () => {
-    if (!isAuth) {
-      navigate('/login');
-    } else {
-
-      console.log('Continuar con la compra...');
-
-    }
+      setCart([]);
+      localStorage.removeItem("cart")
+       toast.info("Compra finalizada")
   };
       
     return(
