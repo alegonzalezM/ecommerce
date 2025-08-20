@@ -4,14 +4,16 @@ import FormularioEdicion from '../components/FormularioEdicion';
 import { CartContext } from '../context/CartContext';
 import { useNavigate } from 'react-router-dom';
 import { AdminContext } from '../context/AdminContext';
+import { useAuth } from '../context/AuthContext';
 
 const Admin= () => {
-    const {setIsAuth} = useContext(CartContext); 
+    // const {setIsAuth} = useContext(CartContext); 
     const {productos, loading, open, setOpen, openEditor, setOpenEditor, seleccionado, setSeleccionado, agregarProducto , actualizarProducto, eliminarProducto} = useContext(AdminContext) //todo lo q está en el provider de AdminContext
 
     const navigate = useNavigate()
     const editFormRef = useRef(null); // referencia al formulario de edición
     const agregarRef = useRef();
+    const { logout } = useAuth();
 
 
   useEffect(() => { 
@@ -22,8 +24,8 @@ const Admin= () => {
 
     const cerrarSesionAdmin= () => {
         setIsAuth(false);                      // cambia el estado global
-        localStorage.removeItem('isAuthenticated');   // limpia storage
-        localStorage.removeItem('role');
+        sessionStorage.removeItem('isAuthenticated');   // limpia storage
+        sessionStorage.removeItem('role');
         navigate('/login');   
                  
     }
@@ -32,10 +34,9 @@ const Admin= () => {
         {loading ? (<p>Cargando...</p>) : (<><nav>
             <ul className='nav nav-admin'>
                 <li className='nav-item'>
-                   <button className='navBtn'  onClick={() => {
-                          cerrarSesionAdmin();
-                          logout();
-  }}>  <i className='fa-solid fa-right-from-bracket'></i>
+                   <button className='navBtn'  onClick={logout}>
+                          
+    <i className='fa-solid fa-right-from-bracket'></i>
                     </button>  
                 </li>
                   <li className='nav-item'>
