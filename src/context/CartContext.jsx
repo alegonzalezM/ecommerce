@@ -1,3 +1,5 @@
+//https://www.dalsanto.com.ar/images/stories/virtuemart/product/BIN163005.jpg
+
 import {createContext , useState, useEffect } from 'react';
 import loading from '../assets/loading.gif'
 import {toast, Zoom } from 'react-toastify'
@@ -19,8 +21,6 @@ export const CartProvider = ({children}) =>{   //provee las variables, estados, 
   }
   });
 
-
-  const [productos, setProductos] = useState([])
   const [carga, setCarga]= useState(true)
   const [cargaAPI, setCargaAPI]= useState(true)
   const [error, setError] = useState(null)
@@ -30,6 +30,8 @@ export const CartProvider = ({children}) =>{   //provee las variables, estados, 
   const [busqueda, setBusqueda] = useState("")
   const [busquedaAPI, setBusquedaAPI]= useState('')
   const[categoria, setCategoria]= useState('todas')
+  const[productos, setProductos]= useState([])
+  const [loading, setLoading]= useState(true)
 
 
   const cartCount = cart.reduce((total, item) => total + item.cantidad, 0);
@@ -58,22 +60,64 @@ fetch("https://6814cc8c225ff1af162a23f1.mockapi.io/bicycles")
      
 /*-------DATOS CARGADOS DESDE PRODUCTOS.JSON--------*/
 
-     useEffect(()=>{
-      fetch('/data/productos.json')
+  //    useEffect(()=>{
+  //     fetch('/data/precios.json')
+  //    .then((res) => res.json())
+  //    .then((datos) => {
+  //                        setTimeout(() => {
+  //                        setPrecios(datos);
+  //                        setCarga(false); 
+  //                         }, 1000);
+  //                         console.log(datos)
+  //   })
+  //    .catch((error) => { setError('Hubo un inconveniente en la carga de datos');
+  //                        setCarga(false)
+  // }); }, []);
+
+
+useEffect(() => {
+  fetch("http://localhost:3006/api/articulos")
+  
      .then((res) => res.json())
      .then((datos) => {
                          setTimeout(() => {
                          setProductos(datos);
                          setCarga(false); 
+                         setLoading(false);
                           }, 1000);
+                          console.log(datos)
     })
      .catch((error) => { setError('Hubo un inconveniente en la carga de datos');
                          setCarga(false)
   }); }, []);
+//       if (!res.ok) throw new Error("Error al cargar productos");
+//       return res.json();
+//     })
+//     .then(data => {
+//       setProductos(Array.isArray(data) ? data : []); // 🔹 guardo en productos
+//       setLoading(false);
+//     })
+//     .catch(err => {
+//       console.error("Error al cargar productos:", err);
+//       setError(err.message);
+//       setLoading(false);
+//     });
+// }, []);
 
-  const productosFiltrados= productos.filter((producto) => producto?.name.toLowerCase().includes(busqueda.toLowerCase() ))
+const [productosFiltrados, setProductosFiltrados] = useState([]);
+
+useEffect(() => {
+  const filtrados = productos.filter((p) =>
+    p.name?.toLowerCase().includes(busqueda.toLowerCase())
+  );
+  setProductosFiltrados(filtrados);
+}, [productos, busqueda]);
+
+  // const productosFiltrados= productos.filter((producto) => producto?.name?.toLowerCase().includes(busqueda.toLowerCase() ))
+
   const productosFiltradosAPI= datosAPI.filter((product) => product?.name.toLowerCase().includes(busquedaAPI.toLowerCase() ))
-  const porCategorias=  productos.filter(p => categoria === "todas" ? true : productos.categoria === categoria
+  console.log('prodFiltr' ,productosFiltrados)
+  const porCategorias=  productos.filter(p => categoria === "todas" ? true : p.categoria === categoria
 );
 
   const handleAddCart = (product) => {
@@ -138,7 +182,7 @@ setCart(prevCart => [...prevCart, { ...product, cantidad: product.cantidad }]);
   };
       
     return(
-    <CartContext.Provider value={{ carga, error, setError,  borrarProducto, productos, vaciarCarrito, setCart, setCargaAPI, cargaAPI, handleAddCart, cart, isCartOpen, setCartOpen, isAuthenticated, setIsAuth, datosAPI, productosFiltrados, productosFiltradosAPI, busqueda, setBusqueda, busquedaAPI, setBusquedaAPI, cantTotal, handleFinalizarCompra, categoria, setCategoria}} >
+    <CartContext.Provider value={{ carga, error, setError,  borrarProducto, vaciarCarrito, setCart, setCargaAPI, cargaAPI, handleAddCart, cart, isCartOpen, setCartOpen, isAuthenticated, setIsAuth, datosAPI, productosFiltrados, productosFiltradosAPI, busqueda, setBusqueda, busquedaAPI, setBusquedaAPI, cantTotal, handleFinalizarCompra, categoria, setCategoria, loading, setLoading}} >
     {children}
 
     </CartContext.Provider>

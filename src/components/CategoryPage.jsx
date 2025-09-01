@@ -9,11 +9,15 @@ import { CartContext } from "../context/CartContext";
 
 function CategoryPage() {
   const { productos } = useContext(CartContext);
+    const { precios } = useContext(CartContext);
   const { category } = useParams();
 
-  const productosCat = productos.filter(p =>
-    p.categoria && p.categoria.toLowerCase() === category.toLowerCase()
-  );
+  // const productosCat = precios.filter(p =>
+  //   p.categoria && p.categoria.toLowerCase() === category.toLowerCase()
+  // );
+  const productosCat = (precios || []).filter(p =>
+  p.categoria && p.categoria.toLowerCase() === category.toLowerCase()
+);
   return (
     <>
 

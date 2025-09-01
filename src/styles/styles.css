@@ -1,4 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Outfit:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 
 :root {
   /* COLORS  */
@@ -6,7 +11,7 @@
   --color-shadow: #ccc;
   --palette-1:rgb(90, 181, 7);
   --palette-2:rgb(102, 192, 11);
-  --palette-3: #72cb10;
+  --palette-3: rgb(114, 203, 16);
   --palette-4: #89d631;
   --palette-5: #a9e159;
   --palette-6:	rgb(185, 251, 192);
@@ -29,10 +34,12 @@
   --box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 
   /* Typography */
-  --font-main: "Rough", "Verdana", sans-serif;
-  --font-secondary: "Winky", sans-serif;
-  --font-alternative: "Bree Serif", serif;
-  --font-display: "";
+  --font-main:  "Bree Serif", "Verdana", sans-serif;
+  --font-secondary: "Outfit",  sans-serif;
+  --font-alternative:  "Roboto Slab",  serif;
+  --font-title:"Cascadia Code", sans-serif;
+  --font-display: "Roboto Condensed", sans-serif;
+  --font-new: "Noto Sans Display", sans-serif;
   --font-size-xxs: .8rem;
   --font-size-xs: 1rem;
   --font-size-sm: 1.2rem;
@@ -419,10 +426,14 @@ i {
 /* PRODUCTOS */
 
 .col-card-name, .col-card-stock {
-  font-family: var(--font-main);
-  width: 15em;
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: .8rem;
+  width: 24em;
   height: 1.5rem;
-  margin: .5em auto;
+  margin: .4em auto;
+  display:flex;
+  align-items: center;
 }
 .container-gallery {
   display: flex;
@@ -434,49 +445,110 @@ i {
   margin-bottom: 3rem;
   font-size: medium;
 }
-/* .card-bike {
-  background-color: #f7f6f4;
-  border-radius: 16px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.card-bike {
   padding: 8px;
-  display: flex;
   flex-direction: column;
   align-items: center;
   transition: var(--box-shadow) 0.3s ease;
-  width: 250px;
   margin: 1.1rem;
-  font-size: small;
-} */
+}
 .col-card-img{
-  width:12em;
-  height:9em;
+  width:20em;
+  height:12em;
   display: flex;
   margin: auto;
   margin-bottom: 0;
   padding-bottom: 0;
 
 }
-.col-card-img img {
-  margin:auto;
-  align-content: center;
- margin-bottom: 0;
+.col-card-img-container {
+  position: relative;
+  display: inline-block;
 }
+
+.col-card-img-container img {
+  display: block;
+  margin: auto;
+}
+.contenedor-hidden {
+  position: absolute;
+  bottom: 10px;
+  background-color: rgba(212, 213, 211, 0.5);
+  display: inline-flex;
+  transform: translateX(-50%);
+  display: none;
+  flex-direction: row; /* botón y qty en la misma fila */
+  align-items: center;
+  gap: 2px;
+  border: 1px solid rgb(49, 48, 48);
+  padding:10px;
+  border-radius: 2px;
+}
+.col-card-img-container:hover .contenedor-hidden{
+
+  display:flex;
+  flex-direction:row;
+  left:40%;
+}
+.qtyButton {
+  font-size: 11px;
+  font-weight: 700;
+  color:white;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background: #393737;
+  border-radius: 3px;
+  width:1rem;
+  height:1rem;
+padding:0;
+  /* margin: 0.1em 0.1em; */
+} 
+.qty-cantidad{
+  border: 1px solid black;
+  padding: .3em .7em;
+ font-weight: 700;
+}
+.qtyButton:hover {
+  border-color: #8e24aa;
+}
+.cant-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+/* .col-card-img-container .btn-hidden {
+  position: absolute;
+  bottom: 10px; 
+  left: 20%;
+  display: none; 
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+} */
+
 .col-card-price{
   color:var(--palette-2);
-  font-family: var(--font-alternative);
-  font-size: large;
+  font-family: var(--font-secondary);
+  font-size: 1.1rem;
   text-shadow: 2px black;
 }
 .product-btn {
-  margin: 10px;
+  min-width:9rem;
   align-self: center;
-  color:	#1a237e;
-  background-color: rgb(90, 181, 7, .5);
+  color:	#fcfdfe;
+  background-color: rgba(80, 81, 79, 0.5);
   justify-content: center; 
-  border-radius: 8px ;
+  border-radius: 5px ;
+
 }
 .product-btn:hover {
-  background-color:var(--palette-3);
+  background-color:rgba(114, 203, 16, .5);
   border: 1px solid rgb(207, 246, 36);
 }
 .link-productos{
@@ -487,13 +559,6 @@ i {
 }
 .div-product-btn {
   width: 100%;
-}
-.qtyButton {
-  padding: 0.3em 0.8em;
-  margin: 0.1em 0.6em;
-}
-.qtyButton:hover {
-  border-color: #8e24aa;
 }
 #input-busqueda, #input-busqueda-API{
   margin:var(--spacing-lg);
@@ -615,6 +680,7 @@ i {
 }
 .pagination{
   display: flex;
+  justify-content: center;
   margin-top:30px;
   --bs-pagination-padding-x: 0.3rem;
  --bs-pagination-padding-y: 0.2rem;
@@ -1163,8 +1229,6 @@ div[class=col-3]{
 .pagination{
   width:50%;
   margin:10px 25% ;
-  /* justify-content: center;
-} */
 }
 .pagination .page-item {
   display: none;

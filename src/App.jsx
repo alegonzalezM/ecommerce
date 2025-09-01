@@ -13,6 +13,7 @@ import Cart from './components/Cart';
 import PaginaConDelay from "./components/PaginaConDelay";
 import CategoryPage from "./components/CategoryPage";
 import NotFound from './layouts/NotFound';
+import PruebaConexion from "./components/PruebaConexion";
 
 function App() {
 
@@ -42,9 +43,10 @@ return (
       <Route path='/cart' element={ <RutaProtegida><Cart/></RutaProtegida> } />
     
       <Route path="*" element={<NotFound />} />
-      
 
 </Routes>
+
+        <PruebaConexion />
 
     </>
   )}
