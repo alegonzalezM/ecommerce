@@ -39,7 +39,8 @@ export const CartProvider = ({children}) =>{   //provee las variables, estados, 
 
 useEffect(()=>{  
   
-fetch("https://6814cc8c225ff1af162a23f1.mockapi.io/bicycles")
+// fetch("https://6814cc8c225ff1af162a23f1.mockapi.io/bicycles")
+fetch("https://ejercicios-clon.vercel.app/api/products")
   .then(response => response.json())
   .then(data => {
       setTimeout(() => {
