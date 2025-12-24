@@ -449,9 +449,10 @@ i {
 } */
 .col-card-img{
   width:12em;
-  height:9em;
+  /* height:9em; */
   display: flex;
   margin: auto;
+  margin-top:10%;
   margin-bottom: 0;
   padding-bottom: 0;
 
@@ -613,13 +614,21 @@ i {
   font-size: var(--font-size-xxs);
   font-family: var(--font-main);
 }
+.producto-img {
+  width: 160px;        /* tamaño chico */
+  height: 160px;
+  object-fit: contain; /* no deforma la imagen */
+}
+
 .pagination{
   display: flex;
   margin-top:30px;
-  --bs-pagination-padding-x: 0.3rem;
+  --bs-pagination-padding-x: 3rem;
  --bs-pagination-padding-y: 0.2rem;
-
+  width:50%;
+  margin:auto;
 }
+
 .whatsapp-float {
   position: fixed;
   bottom: 50px;

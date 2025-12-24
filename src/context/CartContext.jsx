@@ -73,7 +73,7 @@ fetch("https://ejercicios-clon.vercel.app/api/products")
   }); }, []);
 
   const productosFiltrados= productos.filter((producto) => producto?.name.toLowerCase().includes(busqueda.toLowerCase() ))
-  const productosFiltradosAPI= datosAPI.filter((product) => product?.name.toLowerCase().includes(busquedaAPI.toLowerCase() ))
+  const productosFiltradosAPI= datosAPI.filter((product) => product?.id.toLowerCase().includes(busquedaAPI.toLowerCase() ))
   const porCategorias=  productos.filter(p => categoria === "todas" ? true : productos.categoria === categoria
 );
 
@@ -92,8 +92,8 @@ fetch("https://ejercicios-clon.vercel.app/api/products")
         prevCart.map(item =>
           item.id === product.id
     ? { ...item, cantidad: item.cantidad + product.cantidad }
-            : item
-        )
+            : item        )
+            
       );
     } else {
         toast(`El producto ${product.name} se ha agregado al carrito`, {
